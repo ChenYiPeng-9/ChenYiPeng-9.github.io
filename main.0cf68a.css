@@ -1699,7 +1699,8 @@ pre .id {
     margin: 0 30px;
     padding-right: 60px;
     border-bottom: 1px solid #eee;
-    background: #fff
+    /* background: #fff */
+    background: rgba(255, 255, 255, .5);
 }
 
 .archives-wrap:first-child {
@@ -1751,12 +1752,12 @@ pre .id {
 
 .archives .archive-article-title {
     font-size: 16px;
-    color: #333;
+    /* color: #333; */
     transition: color .3s
 }
 
 .archives .archive-article-title:hover {
-    color: #657b83
+    /* color: #657b83 */
 }
 
 .archives .archive-article-title span {
@@ -2171,7 +2172,8 @@ pre .id {
 }
 
 .article-meta time {
-    color: #aaa
+    /* color: #aaa */
+    color: #2f2d2a;
 }
 
 .article-meta time .icon-clock {
@@ -4151,4 +4153,8 @@ a.pswp__share--download:hover {
 .pswp__error-msg a {
     color: #ccc;
     text-decoration: underline
+}
+
+.header-music {
+    margin-top: 90px;
 }
