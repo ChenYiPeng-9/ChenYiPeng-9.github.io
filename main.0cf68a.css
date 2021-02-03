@@ -910,7 +910,7 @@ html {
 }
 
 .left-col #header a {
-    color: #f8f8f8
+    color: #ffffff
 }
 
 .left-col #header a:hover {
@@ -4156,5 +4156,15 @@ a.pswp__share--download:hover {
 }
 
 .header-music {
-    margin-top: 90px;
+    margin-top: 80px;
+}
+
+
+/*版权声明的样式*/
+
+.declare {
+    background-color: #eeeeee;
+    margin-top: 2em;
+    border-left: 3px solid #696969;
+    padding: .5em 1em;
 }
