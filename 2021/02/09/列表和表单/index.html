@@ -6,27 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://ChenYiPeng-9.github.io">
-  <title>web基础知识 | 小菜鸡的琐碎生活</title>
+  <title>列表与表单 | 小菜鸡的琐碎生活</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="2021&#x2F;2&#x2F;5  周五  晴">
+  <meta name="description" content="2021&#x2F;2&#x2F;9 周二  晴">
 <meta property="og:type" content="article">
-<meta property="og:title" content="web基础知识">
-<meta property="og:url" content="https://chenyipeng-9.github.io/2021/02/05/WEB%E6%A0%87%E5%87%86/index.html">
+<meta property="og:title" content="列表与表单">
+<meta property="og:url" content="https://chenyipeng-9.github.io/2021/02/09/%E5%88%97%E8%A1%A8%E5%92%8C%E8%A1%A8%E5%8D%95/index.html">
 <meta property="og:site_name" content="小菜鸡的琐碎生活">
-<meta property="og:description" content="2021&#x2F;2&#x2F;5  周五  晴">
+<meta property="og:description" content="2021&#x2F;2&#x2F;9 周二  晴">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/web.png">
-<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/b.png">
-<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/bz.png">
-<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/htmll.jpg">
-<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/css.jpg">
-<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/search.gif">
-<meta property="article:published_time" content="2021-02-05T15:01:22.000Z">
-<meta property="article:modified_time" content="2021-02-06T14:19:11.345Z">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/bd.png">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/input.png">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/textarea.png">
+<meta property="article:published_time" content="2021-02-09T13:54:16.700Z">
+<meta property="article:modified_time" content="2021-02-09T13:58:52.129Z">
 <meta property="article:author" content="kszy">
 <meta property="article:tag" content="前端">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/web.png">
+<meta name="twitter:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/bd.png">
   
     <link rel="alternative" href="/atom.xml" title="小菜鸡的琐碎生活" type="application/atom+xml">
   
@@ -221,108 +218,234 @@
                                 <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
                             </div>
                             <div id="js-content" class="content-ll">
-                                <article id="post-WEB标准" class="article article-type-post " itemscope itemprop="blogPost">
+                                <article id="post-列表和表单" class="article article-type-post " itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
   
     <h1 class="article-title" itemprop="name">
-      web基础知识
+      列表与表单
     </h1>
   
 
                     
-                        <a href="/2021/02/05/WEB%E6%A0%87%E5%87%86/" class="archive-article-date">
-  	<time datetime="2021-02-05T15:01:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-05</time>
+                        <a href="/2021/02/09/%E5%88%97%E8%A1%A8%E5%92%8C%E8%A1%A8%E5%8D%95/" class="archive-article-date">
+  	<time datetime="2021-02-09T13:54:16.700Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-09</time>
 </a>
                             
             </header>
             
                 <div class="article-entry" itemprop="articleBody">
                     
-                                        <p>2021/2/5  周五  晴</p>
+                                        <p>2021/2/9 周二  晴  </p>
 <a id="more"></a>
 
-<h1 id="认识WEB"><a href="#认识WEB" class="headerlink" title="认识WEB"></a>认识WEB</h1><h2 id="1-认识网页"><a href="#1-认识网页" class="headerlink" title="1. 认识网页"></a>1. 认识网页</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">网页主要由文字、图像和超链接等元素构成。当然，除了这些元素，网页中还可以包含音频、视频以及Flash等。</span><br></pre></td></tr></table></figure>
-<p><strong>网页的形成：</strong></p>
-<p><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/web.png"></p>
-<h2 id="2-浏览器（显示代码）"><a href="#2-浏览器（显示代码）" class="headerlink" title="2. 浏览器（显示代码）"></a>2. 浏览器（显示代码）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">浏览器是网页显示、运行的平台，常用的浏览器有IE、火狐（Firefox）、谷歌（Chrome）、Safari和Opera等。我们平时称为五大浏览器。</span><br></pre></td></tr></table></figure>
-<p><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/b.png"></p>
-<p>首先解释一下浏览器内核是什么东西。英文叫做：Rendering Engine，中文翻译很多，排版引擎、解释引擎、渲染引擎，现在流行称为浏览器内核。实际上 浏览器内核包括两部分，渲染引擎和js引擎。渲染引擎负责读取网页内容，整理讯息，计算网页的显示方式并显示页面，js引擎是解析执行js获取网页的动态效果。 后来 JS 引擎越来越独立，内核就倾向于只指渲染引擎。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">负责读取网页内容，整理讯息，计算网页的显示方式并显示页面.</span><br></pre></td></tr></table></figure>
-<p><strong>当前主要浏览器如下：</strong></p>
-<table>
-<thead>
-<tr>
-<th align="left">浏览器</th>
-<th align="center">内核</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">IE</td>
-<td align="center">Trident</td>
-<td align="left">IE、猎豹安全、360极速浏览器、百度浏览器</td>
-</tr>
-<tr>
-<td align="left">firefox</td>
-<td align="center">Gecko</td>
-<td align="left">可惜这几年已经没落了，打开速度慢、升级频繁、猪一样的队友flash、神一样的对手chrome。</td>
-</tr>
-<tr>
-<td align="left">Safari</td>
-<td align="center">webkit</td>
-<td align="left">现在很多人错误地把 webkit 叫做 chrome内核（即使 chrome内核已经是 blink 了）。苹果感觉像被别人抢了媳妇，都哭晕再厕所里面了。</td>
-</tr>
-<tr>
-<td align="left">chrome</td>
-<td align="center">Chromium/Blink</td>
-<td align="left">在 Chromium 项目中研发 Blink 渲染引擎（即浏览器核心），内置于 Chrome 浏览器之中。Blink 其实是 WebKit 的分支。大部分国产浏览器最新版都采用Blink内核。二次开发</td>
-</tr>
-<tr>
-<td align="left">Opera</td>
-<td align="center">blink</td>
-<td align="left">现在跟随chrome用blink内核。</td>
-</tr>
-</tbody></table>
-<p><strong>拓展阅读：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">移动端的浏览器内核主要说的是系统内置浏览器的内核。</span><br><span class="line"></span><br><span class="line">Android手机而言，使用率最高的就是Webkit内核，大部分国产浏览器宣称的自己的内核，基本上也是属于webkit二次开发。</span><br><span class="line"></span><br><span class="line">iOS以及WP7平台上，由于系统原因，系统大部分自带浏览器内核，一般是Safari或者IE内核Trident的</span><br></pre></td></tr></table></figure>
-<h2 id="3-Web标准（重点）"><a href="#3-Web标准（重点）" class="headerlink" title="3. Web标准（重点）"></a>3. Web标准（重点）</h2><p>Web标准不是某一个标准，而是由W3C组织和其他标准化组织制定的一系列标准的集合。</p>
-<p>W3C 万维网联盟是国际最著名的标准化组织。</p>
-<h3 id="3-1-为什么要遵循WEB标准呢？"><a href="#3-1-为什么要遵循WEB标准呢？" class="headerlink" title="3.1 为什么要遵循WEB标准呢？"></a>3.1 为什么要遵循WEB标准呢？</h3><p> 通过以上浏览器不同内核不同，我们知道他们显示页面或者排版就有些许差异。</p>
-<p><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/bz.png"></p>
-<h3 id="3-2-Web-标准构成"><a href="#3-2-Web-标准构成" class="headerlink" title="3.2 Web 标准构成"></a>3.2 Web 标准构成</h3><p><strong>构成：</strong> 主要包括结构（Structure）、表现（Presentation）和行为（Behavior）三个方面。</p>
-<table>
-<thead>
-<tr>
-<th align="left">标准</th>
-<th align="left">说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">结构</td>
-<td align="left">结构用于对<strong>网页元素</strong>进行整理和分类，咱们主要学的是HTML。</td>
-<td align="left"><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/htmll.jpg"></td>
-</tr>
-<tr>
-<td align="left">表现</td>
-<td align="left">表现用于设置网页元素的版式、颜色、大小等<strong>外观样式</strong>，主要指的是CSS</td>
-<td align="left"><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/css.jpg"></td>
-</tr>
-<tr>
-<td align="left">行为</td>
-<td align="left">行为是指网页模型的定义及<strong>交互</strong>的编写，咱们主要学的是 Javascript</td>
-<td align="left"><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/search.gif"></td>
-</tr>
-</tbody></table>
-<p><strong>总结：</strong></p>
-<ul>
-<li>web标准有三层结构，分别是结构（html）、表现（css）和行为（javascript）  </li>
-<li>结构类似人的身体， 表现类似人的着装， 行为类似人的行为动作</li>
-<li>理想状态下，他们三层都是独立的， 放到不同的文件里面</li>
+<h1 id="1-列表标签（重点）"><a href="#1-列表标签（重点）" class="headerlink" title="1. 列表标签（重点）"></a>1. 列表标签（重点）</h1><ul>
+<li>概念： 容器里面装载着结构，样式一致的文字或图表的一种形式，叫列表</li>
+<li>特点：列表最大的特点就是  整齐 、整洁、 有序，跟表格类似，但是他可组合自由度会更高。  </li>
+<li><strong>表格是用来显示数据的，那么列表就是用来布局的</strong></li>
 </ul>
+<h2 id="1-1-无序列表-ul-（重点）"><a href="#1-1-无序列表-ul-（重点）" class="headerlink" title="1.1 无序列表 ul （重点）"></a>1.1 无序列表 ul （重点）</h2><p>无序列表的各个列表项之间没有顺序级别之分，是并列的。其基本语法格式如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  ......</span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>注意：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. &lt;ul&gt;&lt;&#x2F;ul&gt;中只能嵌套&lt;li&gt;&lt;&#x2F;li&gt;，直接在&lt;ul&gt;&lt;&#x2F;ul&gt;标签中输入其他标签或者文字的做法是不被允许的。</span><br><span class="line">2. &lt;li&gt;与&lt;&#x2F;li&gt;之间相当于一个容器，可以容纳所有元素。</span><br><span class="line">3. 无序列表会带有自己样式属性，放下那个样式，一会让CSS来！</span><br></pre></td></tr></table></figure>
+<h2 id="1-2-有序列表-ol-（了解）"><a href="#1-2-有序列表-ol-（了解）" class="headerlink" title="1.2  有序列表 ol （了解）"></a>1.2  有序列表 ol （了解）</h2><p>有序列表即为有排列顺序的列表，其各个列表项按照一定的顺序排列定义，有序列表的基本语法格式如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  ......</span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="1-3-自定义列表（理解）"><a href="#1-3-自定义列表（理解）" class="headerlink" title="1.3 自定义列表（理解）"></a>1.3 自定义列表（理解）</h2><p>定义列表常用于对术语或名词进行解释和描述，定义列表的列表项前没有任何项目符号。其基本语法如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span>名词1<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dd</span>&gt;</span>名词1解释1<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dd</span>&gt;</span>名词1解释2<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">  ...</span><br><span class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span>名词2<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dd</span>&gt;</span>名词2解释1<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dd</span>&gt;</span>名词2解释2<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">  ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="1-4-列表总结"><a href="#1-4-列表总结" class="headerlink" title="1.4 列表总结"></a>1.4 列表总结</h2><table>
+<thead>
+<tr>
+<th>标签名</th>
+<th align="center">定义</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&lt;ul&gt;&lt;/ul&gt;</code></td>
+<td align="center"><strong>无序标签</strong></td>
+<td align="left">里面只能包含li    没有顺序，我们以后布局中最常用的列表</td>
+</tr>
+<tr>
+<td><code>&lt;ol&gt;&lt;/ol&gt;</code></td>
+<td align="center">有序标签</td>
+<td align="left">里面只能包含li    有顺序， 使用情况较少</td>
+</tr>
+<tr>
+<td><code>&lt;dl&gt;&lt;/dl&gt;</code></td>
+<td align="center">自定义列表</td>
+<td align="left">里面有2个兄弟， dt 和 dd</td>
+</tr>
+</tbody></table>
+<h1 id="2-表单标签-掌握"><a href="#2-表单标签-掌握" class="headerlink" title="2. 表单标签(掌握)"></a>2. 表单标签(掌握)</h1><p>**作用： **表单目的是为了收集用户信息。</p>
+<p>在我们网页中， 我们也需要跟用户进行交互，收集用户资料，此时也需要表单。</p>
+<blockquote>
+<p>在HTML中，一个完整的表单通常由表单控件（也称为表单元素）、提示信息和表单域3个部分构成。</p>
+</blockquote>
+<p><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/bd.png"></p>
+<p>**表单控件： **包含了具体的表单功能项，如单行文本输入框、密码输入框、复选框、提交按钮、重置按钮等。</p>
+<p><strong>提示信息：</strong>一个表单中通常还需要包含一些说明性的文字，提示用户进行填写和操作。</p>
+<p><strong>表单域：</strong> 他相当于一个容器，用来容纳所有的表单控件和提示信息，可以通过他定义处理表单数据所用程序的url地址，以及数据提交到服务器的方法。如果不定义表单域，表单中的数据就无法传送到后台服务器。  </p>
+<h2 id="2-1-input-控件-重点"><a href="#2-1-input-控件-重点" class="headerlink" title="2.1 input 控件(重点)"></a>2.1 input 控件(重点)</h2><ul>
+<li><p>语法：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;属性值&quot;</span> <span class="attr">value</span>=<span class="string">&quot;你好&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>&lt;input /&gt;标签为单标签</li>
+<li>type属性设置不同的属性值用来指定不同的控件类型</li>
+<li>除了type属性还有别的属性</li>
+</ul>
+</li>
+<li><p>常用属性：</p>
+</li>
+</ul>
+<p><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/input.png"></p>
+<h4 id="1-type-属性"><a href="#1-type-属性" class="headerlink" title="1. type 属性"></a>1. type 属性</h4><ul>
+<li>通过改变这个属性值，可以决定了你属于那种input表单。</li>
+<li>比如 type = ‘text’  就表示 文本框 可以做 用户名， 昵称等。</li>
+<li>比如 type = ‘password’  就是表示密码框   用户输入的内容 是不可见的。</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">用户名: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span> </span><br><span class="line">密  码：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-value属性-值"><a href="#2-value属性-值" class="headerlink" title="2. value属性   值"></a>2. value属性   值</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用户名:<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span>  <span class="attr">name</span>=<span class="string">&quot;username&quot;</span> <span class="attr">value</span>=<span class="string">&quot;请输入用户名&quot;</span>&gt;</span> </span><br></pre></td></tr></table></figure>
+<ul>
+<li>value 默认的文本值。 有些表单想刚打开页面就默认显示几个文字，就可以通过这个value 来设置。</li>
+</ul>
+<h4 id="3-name属性"><a href="#3-name属性" class="headerlink" title="3. name属性"></a>3. name属性</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用户名:<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span>  <span class="attr">name</span>=<span class="string">“username”</span> /&gt;</span>  </span><br></pre></td></tr></table></figure>
+<p>name表单的名字， 这样，后台可以通过这个name属性找到这个表单。  页面中的表单很多，name主要作用就是用于区别不同的表单。</p>
+<ul>
+<li>name属性后面的值，是我们自己定义的。</li>
+</ul>
+<ul>
+<li>radio  如果是一组，我们必须给他们命名相同的名字 name   这样就可以多个选其中的一个啦</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span>  /&gt;</span>男</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> /&gt;</span>女</span><br></pre></td></tr></table></figure>
+<ul>
+<li>name属性，我们现在用的较少， 但是，当我们学ajax 和后台的时候，是必须的。</li>
+</ul>
+<h4 id="4-checked属性"><a href="#4-checked属性" class="headerlink" title="4. checked属性"></a>4. checked属性</h4><ul>
+<li>表示默认选中状态。  较常见于 单选按钮和复选按钮。</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">性    别:</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> <span class="attr">value</span>=<span class="string">&quot;男&quot;</span> <span class="attr">checked</span>=<span class="string">&quot;checked&quot;</span> /&gt;</span>男</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> <span class="attr">value</span>=<span class="string">&quot;女&quot;</span> /&gt;</span>女 </span><br></pre></td></tr></table></figure>
+<p>上面这个，表示就默认选中了 男 这个单选按钮</p>
+<h4 id="5-input-属性小结"><a href="#5-input-属性小结" class="headerlink" title="5. input 属性小结"></a>5. input 属性小结</h4><table>
+<thead>
+<tr>
+<th>属性</th>
+<th align="left">说明</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>type</td>
+<td align="left">表单类型</td>
+<td>用来指定不同的控件类型</td>
+</tr>
+<tr>
+<td>value</td>
+<td align="left">表单值</td>
+<td>表单里面默认显示的文本</td>
+</tr>
+<tr>
+<td>name</td>
+<td align="left">表单名字</td>
+<td>页面中的表单很多，name主要作用就是用于区别不同的表单。</td>
+</tr>
+<tr>
+<td>checked</td>
+<td align="left">默认选中</td>
+<td>表示那个单选或者复选按钮一开始就被选中了</td>
+</tr>
+</tbody></table>
+<h2 id="2-2-label标签-理解"><a href="#2-2-label标签-理解" class="headerlink" title="2.2 label标签(理解)"></a>2.2 label标签(理解)</h2><p><strong>目标：</strong>label标签主要目的是为了提高用户体验。 为用户提高最优秀的服务。</p>
+<p><strong>概念：</strong>label 标签为 input 元素定义标注（标签）。</p>
+<p><strong>作用：</strong>用于绑定一个表单元素, 当点击label标签的时候, 被绑定的表单元素就会获得输入焦点。</p>
+<p><strong>如何绑定元素呢？</strong></p>
+<ol>
+<li>第一种用法就是用label直接包括input表单。</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span>&gt;</span> 用户名： <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;usename&quot;</span> <span class="attr">value</span>=<span class="string">&quot;请输入用户名&quot;</span>&gt;</span>   <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>   适合单个表单选择</p>
+<ol start="2">
+<li>第二种用法 for 属性规定 label 与哪个表单元素绑定。</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;sex&quot;</span>&gt;</span>男<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span>  <span class="attr">id</span>=<span class="string">&quot;sex&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-3-textarea控件-文本域"><a href="#2-3-textarea控件-文本域" class="headerlink" title="2.3 textarea控件(文本域)"></a>2.3 textarea控件(文本域)</h2><p><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/textarea.png"></p>
+<ul>
+<li>语法：</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">textarea</span> &gt;</span></span><br><span class="line">  文本内容</span><br><span class="line"><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>作用：</p>
+<p>通过textarea控件可以轻松地创建多行文本输入框.</p>
+<p>cols=”每行中的字符数” rows=”显示的行数”  我们实际开发不用</p>
+</li>
+</ul>
+<h4 id="文本框和文本域区别"><a href="#文本框和文本域区别" class="headerlink" title="文本框和文本域区别"></a>文本框和文本域区别</h4><table>
+<thead>
+<tr>
+<th align="left">表单</th>
+<th align="center">名称</th>
+<th align="center">区别</th>
+<th align="right">默认值显示</th>
+<th align="right">用于场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">input type=”text”</td>
+<td align="center">文本框</td>
+<td align="center">只能显示一行文本</td>
+<td align="right">单标签，通过value显示默认值</td>
+<td align="right">用户名、昵称、密码等</td>
+</tr>
+<tr>
+<td align="left">textarea</td>
+<td align="center">文本域</td>
+<td align="center">可以显示多行文本</td>
+<td align="right">双标签，默认值写到标签中间</td>
+<td align="right">留言板</td>
+</tr>
+</tbody></table>
+<h2 id="2-4-select下拉列表"><a href="#2-4-select下拉列表" class="headerlink" title="2.4 select下拉列表"></a>2.4 select下拉列表</h2><p><strong>目的：</strong>如果有多个选项让用户选择，为了节约空间，我们可以使用select控件定义下拉列表.</p>
+<p><strong>语法：</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">option</span>&gt;</span>选项1<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">option</span>&gt;</span>选项2<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">option</span>&gt;</span>选项3<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">  ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>注意：</li>
+</ul>
+<ol>
+<li>&lt;select&gt;  中至少包含一对 option </li>
+<li>在option 中定义selected =” selected “时，当前项即为默认选中项。</li>
+</ol>
+<h1 id="3-form表单域"><a href="#3-form表单域" class="headerlink" title="3. form表单域"></a>3. form表单域</h1><ul>
+<li>目的：在HTML中，form标签被用于定义表单域，以实现用户信息的收集和传递，form中的所有内容都会被提交给服务器。他相当于一个容器，用来容纳所有的表单控件和提示信息，可以通过他定义处理表单数据所用程序的url地址，以及数据提交到服务器的方法。如果不定义表单域，表单中的数据就无法传送到后台服务器。  </li>
+</ul>
+<p>**语法: **</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;url地址&quot;</span> <span class="attr">method</span>=<span class="string">&quot;提交方式&quot;</span> <span class="attr">name</span>=<span class="string">&quot;表单名称&quot;</span>&gt;</span></span><br><span class="line">  各种表单控件</span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>常用属性：</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th align="left">属性值</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>action</td>
+<td align="left">url地址</td>
+<td>用于指定接收并处理表单数据的服务器程序的url地址。</td>
+</tr>
+<tr>
+<td>method</td>
+<td align="left">get/post</td>
+<td>用于设置表单数据的提交方式，其取值为get或post。</td>
+</tr>
+<tr>
+<td>name</td>
+<td align="left">名称</td>
+<td>用于指定表单的名称，以区分同一个页面中的多个表单。</td>
+</tr>
+</tbody></table>
 
                                             
                                                 <!-- 添加版权声明 -->
@@ -335,9 +458,9 @@
                                                                     
                                                                             <br>
                                                                             <strong>本文链接：</strong>
-                                                                            <a href="https://ChenYiPeng-9.github.io/2021/02/05/WEB标准/" title="web基础知识" target="_blank">
+                                                                            <a href="https://ChenYiPeng-9.github.io/2021/02/09/列表和表单/" title="列表与表单" target="_blank">
                                                                                 https://ChenYiPeng-9.github.io/
-                                                                                    2021/02/05/WEB标准/
+                                                                                    2021/02/09/列表和表单/
                                                                             </a>
                                                                             <br>
                                                                             <strong>版权声明：</strong> 本作品采用
@@ -372,7 +495,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/web//" class="article-tag-list-link color4">web</a>
+        			<a href="/categories/HTML//" class="article-tag-list-link color5">HTML</a>
         		</li>
       		
 		</ul>
@@ -427,7 +550,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://chenyipeng-9.github.io/2021/02/05/WEB%E6%A0%87%E5%87%86/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://chenyipeng-9.github.io/2021/02/09/%E5%88%97%E8%A1%A8%E5%92%8C%E8%A1%A8%E5%8D%95/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -441,18 +564,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2021/02/06/%E8%AE%A4%E8%AF%86HTML/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          HTML初识
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/02/04/Github/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">GitHub基础知识</div>
+    <a href="/2021/02/08/%E8%A1%A8%E6%A0%BC/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">表格</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -479,7 +593,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%A4%E8%AF%86WEB"><span class="toc-number">1.</span> <span class="toc-text">认识WEB</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E8%AE%A4%E8%AF%86%E7%BD%91%E9%A1%B5"><span class="toc-number">1.1.</span> <span class="toc-text">1. 认识网页</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%B5%8F%E8%A7%88%E5%99%A8%EF%BC%88%E6%98%BE%E7%A4%BA%E4%BB%A3%E7%A0%81%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">2. 浏览器（显示代码）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Web%E6%A0%87%E5%87%86%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89"><span class="toc-number">1.3.</span> <span class="toc-text">3. Web标准（重点）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E9%81%B5%E5%BE%AAWEB%E6%A0%87%E5%87%86%E5%91%A2%EF%BC%9F"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1 为什么要遵循WEB标准呢？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-Web-%E6%A0%87%E5%87%86%E6%9E%84%E6%88%90"><span class="toc-number">1.3.2.</span> <span class="toc-text">3.2 Web 标准构成</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E5%88%97%E8%A1%A8%E6%A0%87%E7%AD%BE%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">1. 列表标签（重点）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8-ul-%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 无序列表 ul （重点）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8-ol-%EF%BC%88%E4%BA%86%E8%A7%A3%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">1.2  有序列表 ol （了解）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%97%E8%A1%A8%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="toc-number">1.3.</span> <span class="toc-text">1.3 自定义列表（理解）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-4-%E5%88%97%E8%A1%A8%E6%80%BB%E7%BB%93"><span class="toc-number">1.4.</span> <span class="toc-text">1.4 列表总结</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E8%A1%A8%E5%8D%95%E6%A0%87%E7%AD%BE-%E6%8E%8C%E6%8F%A1"><span class="toc-number">2.</span> <span class="toc-text">2. 表单标签(掌握)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-input-%E6%8E%A7%E4%BB%B6-%E9%87%8D%E7%82%B9"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 input 控件(重点)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-type-%E5%B1%9E%E6%80%A7"><span class="toc-number">2.1.0.1.</span> <span class="toc-text">1. type 属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-value%E5%B1%9E%E6%80%A7-%E5%80%BC"><span class="toc-number">2.1.0.2.</span> <span class="toc-text">2. value属性   值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-name%E5%B1%9E%E6%80%A7"><span class="toc-number">2.1.0.3.</span> <span class="toc-text">3. name属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-checked%E5%B1%9E%E6%80%A7"><span class="toc-number">2.1.0.4.</span> <span class="toc-text">4. checked属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-input-%E5%B1%9E%E6%80%A7%E5%B0%8F%E7%BB%93"><span class="toc-number">2.1.0.5.</span> <span class="toc-text">5. input 属性小结</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-label%E6%A0%87%E7%AD%BE-%E7%90%86%E8%A7%A3"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 label标签(理解)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-textarea%E6%8E%A7%E4%BB%B6-%E6%96%87%E6%9C%AC%E5%9F%9F"><span class="toc-number">2.3.</span> <span class="toc-text">2.3 textarea控件(文本域)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E6%A1%86%E5%92%8C%E6%96%87%E6%9C%AC%E5%9F%9F%E5%8C%BA%E5%88%AB"><span class="toc-number">2.3.0.1.</span> <span class="toc-text">文本框和文本域区别</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4-select%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8"><span class="toc-number">2.4.</span> <span class="toc-text">2.4 select下拉列表</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-form%E8%A1%A8%E5%8D%95%E5%9F%9F"><span class="toc-number">3.</span> <span class="toc-text">3. form表单域</span></a></li></ol>
                     </div>
                 </span>
             </div>
