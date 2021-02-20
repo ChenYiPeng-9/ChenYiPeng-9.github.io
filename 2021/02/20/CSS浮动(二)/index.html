@@ -15,16 +15,16 @@
 <meta property="og:site_name" content="小菜鸡的琐碎生活">
 <meta property="og:description" content="2021&#x2F;2&#x2F;20  周六  晴">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="d:/资料文件/10.web前端/【27】源码+课件+软件/01-03%20前端开发基础/02-CSS资料/02-CSS资料/CSS-Day04/笔记/media/05_父子盒子关系示意图.png">
-<meta property="og:image" content="d:/资料文件/10.web前端/【27】源码+课件+软件/01-03%20前端开发基础/02-CSS资料/02-CSS资料/CSS-Day04/笔记/media/two1.jpg">
-<meta property="og:image" content="d:/资料文件/10.web前端/【27】源码+课件+软件/01-03%20前端开发基础/02-CSS资料/02-CSS资料/CSS-Day04/笔记/media/n.jpg">
-<meta property="og:image" content="d:/资料文件/10.web前端/【27】源码+课件+软件/01-03%20前端开发基础/02-CSS资料/02-CSS资料/CSS-Day04/笔记/media/no.jpg">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/05_%E7%88%B6%E5%AD%90%E7%9B%92%E5%AD%90%E5%85%B3%E7%B3%BB%E7%A4%BA%E6%84%8F%E5%9B%BE.png">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/two1.jpg">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/n.jpg">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/no.jpg">
 <meta property="article:published_time" content="2021-02-20T06:35:57.616Z">
-<meta property="article:modified_time" content="2021-02-20T06:38:46.323Z">
+<meta property="article:modified_time" content="2021-02-20T06:45:14.457Z">
 <meta property="article:author" content="kszy">
 <meta property="article:tag" content="前端">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="d:/资料文件/10.web前端/【27】源码+课件+软件/01-03%20前端开发基础/02-CSS资料/02-CSS资料/CSS-Day04/笔记/media/05_父子盒子关系示意图.png">
+<meta name="twitter:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/05_%E7%88%B6%E5%AD%90%E7%9B%92%E5%AD%90%E5%85%B3%E7%B3%BB%E7%A4%BA%E6%84%8F%E5%9B%BE.png">
   
     <link rel="alternative" href="/atom.xml" title="小菜鸡的琐碎生活" type="application/atom+xml">
   
@@ -244,21 +244,21 @@
 
 <h3 id="1-5-浮动-float-的应用（重要）"><a href="#1-5-浮动-float-的应用（重要）" class="headerlink" title="1.5 浮动(float)的应用（重要）"></a>1.5 浮动(float)的应用（重要）</h3><h4 id="浮动和标准流的父盒子搭配"><a href="#浮动和标准流的父盒子搭配" class="headerlink" title="浮动和标准流的父盒子搭配"></a>浮动和标准流的父盒子搭配</h4><p>我们知道，浮动是脱标的，会影响下面的标准流元素，此时，我们需要给浮动的元素添加一个标准流的父亲，这样，最大化的减小了对其他标准流的影响。一个完整的网页，是 标准流 +  浮动 +  我们后面要讲的定位 一起完成的。</p>
 <h3 id="1-6-浮动-float-的扩展"><a href="#1-6-浮动-float-的扩展" class="headerlink" title="1.6  浮动(float)的扩展"></a>1.6  浮动(float)的扩展</h3><h4 id="1-浮动元素与父盒子的关系"><a href="#1-浮动元素与父盒子的关系" class="headerlink" title="1). 浮动元素与父盒子的关系"></a>1). 浮动元素与父盒子的关系</h4><ul>
-<li>子盒子的浮动参照父盒子对齐</li>
-<li>不会与父盒子的边框重叠，也不会超过父盒子的内边距<img src="D:/资料文件/10.web前端/【27】源码+课件+软件/01-03 前端开发基础/02-CSS资料/02-CSS资料/CSS-Day04/笔记/media/05_父子盒子关系示意图.png" >
-​
-
+<li><p>子盒子的浮动参照父盒子对齐</p>
+</li>
+<li><p>不会与父盒子的边框重叠，也不会超过父盒子的内边距<br><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/05_%E7%88%B6%E5%AD%90%E7%9B%92%E5%AD%90%E5%85%B3%E7%B3%BB%E7%A4%BA%E6%84%8F%E5%9B%BE.png"></p>
+<h4 id="2-浮动元素与兄弟盒子的关系"><a href="#2-浮动元素与兄弟盒子的关系" class="headerlink" title="2). 浮动元素与兄弟盒子的关系"></a>2). 浮动元素与兄弟盒子的关系</h4><p>在一个父级盒子中，如果<strong>前一个兄弟盒子</strong>是：</p>
+</li>
+<li><p><strong>浮动</strong>的，那么<strong>当前盒子</strong>会与前一个盒子的顶部对齐；</p>
+</li>
+<li><p><strong>普通流</strong>的，那么<strong>当前盒子</strong>会显示在前一个兄弟盒子的下方。 </p>
+<blockquote>
+<p>浮动只会影响当前的或者是后面的标准流盒子，不会影响前面的标准流。<br><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/two1.jpg"></p>
+</blockquote>
 </li>
 </ul>
-<h4 id="2-浮动元素与兄弟盒子的关系"><a href="#2-浮动元素与兄弟盒子的关系" class="headerlink" title="2). 浮动元素与兄弟盒子的关系"></a>2). 浮动元素与兄弟盒子的关系</h4><p>在一个父级盒子中，如果<strong>前一个兄弟盒子</strong>是：</p>
-<ul>
-<li><strong>浮动</strong>的，那么<strong>当前盒子</strong>会与前一个盒子的顶部对齐；</li>
-<li><strong>普通流</strong>的，那么<strong>当前盒子</strong>会显示在前一个兄弟盒子的下方。 </li>
-</ul>
-<blockquote>
-<p>浮动只会影响当前的或者是后面的标准流盒子，不会影响前面的标准流。<br> <img src="D:/资料文件/10.web前端/【27】源码+课件+软件/01-03 前端开发基础/02-CSS资料/02-CSS资料/CSS-Day04/笔记/media/two1.jpg" /><br><strong>建议</strong><br><strong>如果一个盒子里面有多个子盒子，如果其中一个盒子浮动了，其他兄弟也应该浮动。防止引起问题</strong></p>
-</blockquote>
-<h2 id="2-清除浮动"><a href="#2-清除浮动" class="headerlink" title="2. 清除浮动"></a>2. 清除浮动</h2><h3 id="2-1-为什么要清除浮动"><a href="#2-1-为什么要清除浮动" class="headerlink" title="2.1 为什么要清除浮动"></a>2.1 为什么要清除浮动</h3><p>因为父级盒子很多情况下，不方便给高度，但是子盒子浮动就不占有位置，最后父级盒子高度为0，就影响了下面的标准流盒子。<br><img src="D:/资料文件/10.web前端/【27】源码+课件+软件/01-03 前端开发基础/02-CSS资料/02-CSS资料/CSS-Day04/笔记/media/n.jpg" /><br><img src="D:/资料文件/10.web前端/【27】源码+课件+软件/01-03 前端开发基础/02-CSS资料/02-CSS资料/CSS-Day04/笔记/media/no.jpg" /></p>
+<p><strong>建议</strong><br><strong>如果一个盒子里面有多个子盒子，如果其中一个盒子浮动了，其他兄弟也应该浮动。防止引起问题</strong></p>
+<h2 id="2-清除浮动"><a href="#2-清除浮动" class="headerlink" title="2. 清除浮动"></a>2. 清除浮动</h2><h3 id="2-1-为什么要清除浮动"><a href="#2-1-为什么要清除浮动" class="headerlink" title="2.1 为什么要清除浮动"></a>2.1 为什么要清除浮动</h3><p>因为父级盒子很多情况下，不方便给高度，但是子盒子浮动就不占有位置，最后父级盒子高度为0，就影响了下面的标准流盒子。<br><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/n.jpg"><br><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/no.jpg"></p>
 <ul>
 <li>总结：<ul>
 <li>由于浮动元素不再占用原文档流的位置，所以它会对后面的元素排版产生影响</li>
@@ -268,9 +268,7 @@
 </ul>
 <h3 id="2-2-清除浮动本质"><a href="#2-2-清除浮动本质" class="headerlink" title="2.2 清除浮动本质"></a>2.2 清除浮动本质</h3><p>​    <strong>清除浮动主要为了解决父级元素因为子级浮动引起内部高度为0 的问题。清除浮动之后， 父级就会根据浮动的子盒子自动检测高度。父级有了高度，就不会影响下面的标准流了</strong></p>
 <h3 id="2-3-清除浮动的方法"><a href="#2-3-清除浮动的方法" class="headerlink" title="2.3 清除浮动的方法"></a>2.3 清除浮动的方法</h3><ul>
-<li>语法：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">选择器&#123;clear:属性值;&#125;   clear 清除  </span><br></pre></td></tr></table></figure>
+<li>语法：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">选择器&#123;clear:属性值;&#125;   clear 清除  </span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -290,33 +288,28 @@
 <td>both</td>
 <td>同时清除左右两侧浮动的影响</td>
 </tr>
+<tr>
+<td>但是我们实际工作中， 几乎只用 clear: both;</td>
+<td></td>
+</tr>
 </tbody></table>
-<p>但是我们实际工作中， 几乎只用 clear: both;</p>
-<h4 id="1-额外标签法-隔墙法"><a href="#1-额外标签法-隔墙法" class="headerlink" title="1).额外标签法(隔墙法)"></a>1).额外标签法(隔墙法)</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">是W3C推荐的做法是通过在浮动元素末尾添加一个空的标签例如 <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">”clear:both”</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>，或则其他标签br等亦可。</span><br></pre></td></tr></table></figure>
-<ul>
+<h4 id="1-额外标签法-隔墙法"><a href="#1-额外标签法-隔墙法" class="headerlink" title="1).额外标签法(隔墙法)"></a>1).额外标签法(隔墙法)</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">是W3C推荐的做法是通过在浮动元素末尾添加一个空的标签例如 <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">”clear:both”</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>，或则其他标签br等亦可。</span><br></pre></td></tr></table></figure></li>
 <li>优点： 通俗易懂，书写方便</li>
-<li>缺点： 添加许多无意义的标签，结构化较差。</li>
+<li>缺点： 添加许多无意义的标签，结构化较差。<h4 id="2-父级添加overflow属性方法"><a href="#2-父级添加overflow属性方法" class="headerlink" title="2).父级添加overflow属性方法"></a>2).父级添加overflow属性方法</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">可以给父级添加： overflow为 hidden| auto| scroll  都可以实现。</span><br></pre></td></tr></table></figure>
+优点：  代码简洁<br>缺点：  内容增多时候容易造成不会自动换行导致内容被隐藏掉，无法显示需要溢出的元素。<h4 id="3-使用after伪元素清除浮动"><a href="#3-使用after伪元素清除浮动" class="headerlink" title="3).使用after伪元素清除浮动"></a>3).使用after伪元素清除浮动</h4></li>
 </ul>
-<h4 id="2-父级添加overflow属性方法"><a href="#2-父级添加overflow属性方法" class="headerlink" title="2).父级添加overflow属性方法"></a>2).父级添加overflow属性方法</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">可以给父级添加： overflow为 hidden| auto| scroll  都可以实现。</span><br></pre></td></tr></table></figure>
-<p>优点：  代码简洁<br>缺点：  内容增多时候容易造成不会自动换行导致内容被隐藏掉，无法显示需要溢出的元素。</p>
-<h4 id="3-使用after伪元素清除浮动"><a href="#3-使用after伪元素清除浮动" class="headerlink" title="3).使用after伪元素清除浮动"></a>3).使用after伪元素清除浮动</h4><p><strong>:after 方式为空元素额外标签法的升级版，好处是不用单独加标签了</strong><br>使用方法：</p>
+<p><strong>:after 方式为空元素额外标签法的升级版，好处是不用单独加标签了</strong><br>使用方法：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span> &#123;  <span class="attribute">content</span>: <span class="string">&quot;&quot;</span>; <span class="attribute">display</span>: block; <span class="attribute">height</span>: <span class="number">0</span>; <span class="attribute">clear</span>: both; <span class="attribute">visibility</span>: hidden;  &#125;   </span><br><span class="line"><span class="selector-class">.clearfix</span> &#123;<span class="attribute">*zoom</span>: <span class="number">1</span>;&#125;   <span class="comment">/* IE6、7 专有 */</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>优点： 符合闭合浮动思想  结构语义化正确</li>
-<li>缺点： 由于IE6-7不支持:after，使用 zoom:1触发 hasLayout。</li>
-</ul>
-<h4 id="4-使用双伪元素清除浮动"><a href="#4-使用双伪元素清除浮动" class="headerlink" title="4).使用双伪元素清除浮动"></a>4).使用双伪元素清除浮动</h4><p>使用方法：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:before</span>,<span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span> &#123; </span><br><span class="line">  <span class="attribute">content</span>:<span class="string">&quot;&quot;</span>;</span><br><span class="line">  <span class="attribute">display</span>:table; </span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line"> <span class="attribute">clear</span>:both;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span> &#123;</span><br><span class="line">  <span class="attribute">*zoom</span>:<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
+<li>缺点： 由于IE6-7不支持:after，使用 zoom:1触发 hasLayout。<h4 id="4-使用双伪元素清除浮动"><a href="#4-使用双伪元素清除浮动" class="headerlink" title="4).使用双伪元素清除浮动"></a>4).使用双伪元素清除浮动</h4>使用方法：<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:before</span>,<span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span> &#123; </span><br><span class="line">  <span class="attribute">content</span>:<span class="string">&quot;&quot;</span>;</span><br><span class="line">  <span class="attribute">display</span>:table; </span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line"> <span class="attribute">clear</span>:both;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span> &#123;</span><br><span class="line">  <span class="attribute">*zoom</span>:<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li>优点：  代码更简洁</li>
-<li>缺点：  由于IE6-7不支持:after，使用 zoom:1触发 hasLayout。</li>
+<li>缺点：  由于IE6-7不支持:after，使用 zoom:1触发 hasLayout。<h3 id="2-4-清除浮动总结"><a href="#2-4-清除浮动总结" class="headerlink" title="2.4 清除浮动总结"></a>2.4 清除浮动总结</h3></li>
 </ul>
-<h3 id="2-4-清除浮动总结"><a href="#2-4-清除浮动总结" class="headerlink" title="2.4 清除浮动总结"></a>2.4 清除浮动总结</h3><ol>
+<ol>
 <li>父级没高度</li>
 <li>子盒子浮动了</li>
-<li>影响下面布局了，我们就应该清除浮动了。</li>
-</ol>
-<table>
+<li>影响下面布局了，我们就应该清除浮动了。<table>
 <thead>
 <tr>
 <th>清除浮动的方式</th>
@@ -345,6 +338,8 @@
 <td align="left">由于IE6-7不支持:after，兼容性问题</td>
 </tr>
 </tbody></table>
+</li>
+</ol>
 
                                             
                                                 <!-- 添加版权声明 -->
