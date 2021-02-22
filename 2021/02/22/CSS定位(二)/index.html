@@ -6,20 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://ChenYiPeng-9.github.io">
-  <title>my first blog article | 小菜鸡的琐碎生活</title>
+  <title>CSS定位(二) | 小菜鸡的琐碎生活</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##第一章">
+  <meta name="description" content="2021&#x2F;2&#x2F;22  周一  晴">
 <meta property="og:type" content="article">
-<meta property="og:title" content="my first blog article">
-<meta property="og:url" content="https://chenyipeng-9.github.io/2021/02/01/3/index.html">
+<meta property="og:title" content="CSS定位(二)">
+<meta property="og:url" content="https://chenyipeng-9.github.io/2021/02/22/CSS%E5%AE%9A%E4%BD%8D(%E4%BA%8C)/index.html">
 <meta property="og:site_name" content="小菜鸡的琐碎生活">
-<meta property="og:description" content="##第一章">
+<meta property="og:description" content="2021&#x2F;2&#x2F;22  周一  晴">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-02-01T11:01:22.000Z">
-<meta property="article:modified_time" content="2021-02-03T14:43:24.784Z">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/%7BNJWKYS.jpg">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/xl.png">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/10_%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD.png">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/11_%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E5%B1%85%E4%B8%AD%E7%A4%BA%E6%84%8F%E5%9B%BE.png">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/12_zindex%E7%A4%BA%E6%84%8F%E5%9B%BE.png">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/28%E6%B7%98%E5%AE%9D.png">
+<meta property="article:published_time" content="2021-02-22T13:39:36.188Z">
+<meta property="article:modified_time" content="2021-02-22T13:44:09.204Z">
 <meta property="article:author" content="kszy">
 <meta property="article:tag" content="前端">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/%7BNJWKYS.jpg">
   
     <link rel="alternative" href="/atom.xml" title="小菜鸡的琐碎生活" type="application/atom+xml">
   
@@ -214,42 +221,166 @@
                                 <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
                             </div>
                             <div id="js-content" class="content-ll">
-                                <article id="post-3" class="article article-type-post " itemscope itemprop="blogPost">
+                                <article id="post-CSS定位(二)" class="article article-type-post " itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
   
     <h1 class="article-title" itemprop="name">
-      my first blog article
+      CSS定位(二)
     </h1>
   
 
                     
-                        <a href="/2021/02/01/3/" class="archive-article-date">
-  	<time datetime="2021-02-01T11:01:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-01</time>
+                        <a href="/2021/02/22/CSS%E5%AE%9A%E4%BD%8D(%E4%BA%8C)/" class="archive-article-date">
+  	<time datetime="2021-02-22T13:39:36.188Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-22</time>
 </a>
                             
             </header>
             
                 <div class="article-entry" itemprop="articleBody">
                     
-                                        <p>##第一章</p>
+                                        <p>2021/2/22  周一  晴  </p>
 <a id="more"></a>
 
-<p>内容</p>
-<hr>
-<p>##第二章</p>
-<p>内容</p>
-<hr>
-<p>##参考文献</p>
+<h2 id="4-定位-position-的案例"><a href="#4-定位-position-的案例" class="headerlink" title="4. 定位(position)的案例"></a>4. 定位(position)的案例</h2><h3 id="4-1-哈根达斯"><a href="#4-1-哈根达斯" class="headerlink" title="4.1 哈根达斯"></a>4.1 哈根达斯</h3><p><strong>案例截图</strong>：<br><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/%7BNJWKYS.jpg" style="zoom: 50%;" /></p>
+<h4 id="哈根达斯分析"><a href="#哈根达斯分析" class="headerlink" title="哈根达斯分析"></a>哈根达斯分析</h4><ol>
+<li>一个大的 <code>div</code> 中包含 <code>3</code> 张图片；</li>
+<li>大的 <code>div</code> 水平居中；</li>
+<li><code>2</code> 张小图片<strong>重叠</strong>在<strong>广告</strong>图片上方 —— 脱标，不占位置，需要使用<strong>绝对定位</strong>；</li>
+<li><code>2</code> 张小图片分别显示在<strong>左上角</strong>和<strong>右下角</strong> —— 需要<strong>使用边偏移确定准确位置</strong>。<br><strong>案例小结</strong>：</li>
+<li><strong>子绝父相</strong> —— <strong>子元素</strong>使用<strong>绝对定位</strong>，<strong>父元素</strong>使用<strong>相对定位</strong>；</li>
+<li><strong>与浮动的对比</strong>：<ul>
+<li><strong>绝对定位</strong>：脱标，<strong>利用边偏移指定准确位置</strong>；</li>
+<li><strong>浮动</strong>：脱标，不能指定准确位置，<strong>让多个块级元素在一行显示</strong>。</li>
+</ul>
+</li>
+</ol>
+<h3 id="4-2-仿新浪头部和广告"><a href="#4-2-仿新浪头部和广告" class="headerlink" title="4.2 仿新浪头部和广告"></a>4.2 仿新浪头部和广告</h3><p><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/xl.png"></p>
+<h4 id="新浪案例分析"><a href="#新浪案例分析" class="headerlink" title="新浪案例分析"></a>新浪案例分析</h4><ol>
+<li>顶部图片<strong>固定</strong>在浏览器可视窗口顶部，不会随窗口一起滚动；</li>
+<li>左右两侧的广告图片<strong>固定</strong>在浏览器可视窗口的左右两侧，不会随窗口一起滚动；</li>
+<li>注意：<strong>底部的内容图片</strong>初始<strong>显示在顶部图片的下方</strong>，如何解决？</li>
+</ol>
+<h4 id="步骤-1-——-顶部图片和底部内容"><a href="#步骤-1-——-顶部图片和底部内容" class="headerlink" title="步骤 1 —— 顶部图片和底部内容"></a>步骤 1 —— 顶部图片和底部内容</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.top</span> &#123;</span><br><span class="line">    <span class="comment">/* 注意：使用固定定位时，如果盒子中没有内容，需要指定宽度 */</span></span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">44px</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">url</span>(images/top.png) no-repeat top center;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0px</span>;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">1002px</span>;</span><br><span class="line">    <span class="comment">/* 顶部的 44px 的 margin 可以让 box 显示在顶部图片下方 */</span></span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">44px</span> auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>注意</strong>：</p>
+<ol>
+<li>在使用固定定位时，如果盒子中没有内容，需要指定宽度</li>
+<li>设置底部内容图片的**顶部 <code>margin</code>**，可以让底部盒子初始显示在顶部图片的下方。</li>
+</ol>
+<h4 id="步骤-2-——-左右两侧广告"><a href="#步骤-2-——-左右两侧广告" class="headerlink" title="步骤 2 —— 左右两侧广告"></a>步骤 2 —— 左右两侧广告</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.ad-left</span>,</span><br><span class="line"><span class="selector-class">.ad-right</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.ad-left</span> &#123;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.ad-right</span> &#123;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>注意</strong>：不要同时使用 <code>left</code> 和 <code>right</code> 和边偏移属性。<br><strong>案例小结</strong>：</p>
+<ol>
+<li><strong>固定定位</strong>的应用场景：<strong>固定在浏览器可视窗口某个位置的布局</strong>；</li>
+<li>在使用固定和绝对定位时，如果盒子中没有内容，需要指定宽度（稍后就讲）。</li>
+</ol>
+<h2 id="5-定位-position-的扩展"><a href="#5-定位-position-的扩展" class="headerlink" title="5. 定位(position)的扩展"></a>5. 定位(position)的扩展</h2><h3 id="5-1-绝对定位的盒子居中"><a href="#5-1-绝对定位的盒子居中" class="headerlink" title="5.1 绝对定位的盒子居中"></a>5.1 绝对定位的盒子居中</h3><blockquote>
+<p><strong>注意</strong>：<strong>绝对定位/固定定位的盒子</strong>不能通过设置 <code>margin: auto</code> 设置<strong>水平居中</strong>。</p>
+</blockquote>
+<p>在使用<strong>绝对定位</strong>时要想实现水平居中，可以按照下图的方法：<br><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/10_%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD.png"></p>
+<ol>
+<li><code>left: 50%;</code>：让<strong>盒子的左侧</strong>移动到<strong>父级元素的水平中心位置</strong>；</li>
+<li><code>margin-left: -100px;</code>：让盒子<strong>向左</strong>移动<strong>自身宽度的一半</strong>。</li>
+</ol>
+<h4 id="盒子居中定位示意图、"><a href="#盒子居中定位示意图、" class="headerlink" title="盒子居中定位示意图、"></a>盒子居中定位示意图、</h4><p><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/11_%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E5%B1%85%E4%B8%AD%E7%A4%BA%E6%84%8F%E5%9B%BE.png"></p>
+<h3 id="5-2-堆叠顺序（z-index）"><a href="#5-2-堆叠顺序（z-index）" class="headerlink" title="5.2 堆叠顺序（z-index）"></a>5.2 堆叠顺序（z-index）</h3><p>在使用<strong>定位</strong>布局时，可能会<strong>出现盒子重叠的情况</strong>。<br>加了定位的盒子，默认<strong>后来者居上</strong>， 后面的盒子会压住前面的盒子。<br>应用 <code>z-index</code> 层叠等级属性可以<strong>调整盒子的堆叠顺序</strong>。如下图所示：<br><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/12_zindex%E7%A4%BA%E6%84%8F%E5%9B%BE.png"><br><code>z-index</code> 的特性如下：</p>
+<ol>
+<li><strong>属性值</strong>：<strong>正整数</strong>、<strong>负整数</strong>或 <strong>0</strong>，默认值是 0，数值越大，盒子越靠上；</li>
+<li>如果<strong>属性值相同</strong>，则按照书写顺序，<strong>后来居上</strong>；</li>
+<li><strong>数字后面不能加单位</strong>。<br><strong>注意</strong>：<code>z-index</code> 只能应用于<strong>相对定位</strong>、<strong>绝对定位</strong>和<strong>固定定位</strong>的元素，其他<strong>标准流</strong>、<strong>浮动</strong>和<strong>静态定位</strong>无效。</li>
+</ol>
+<h3 id="5-3-定位改变display属性"><a href="#5-3-定位改变display属性" class="headerlink" title="5.3 定位改变display属性"></a>5.3 定位改变display属性</h3><p> 前面我们讲过， display 是 显示模式， 可以改变显示模式有以下方式:</p>
+<ul>
+<li>可以用inline-block  转换为行内块</li>
+<li>可以用浮动 float 默认转换为行内块（类似，并不完全一样，因为浮动是脱标的）</li>
+<li>绝对定位和固定定位也和浮动类似， 默认转换的特性 转换为行内块。<br>所以说， 一个行内的盒子，如果加了<strong>浮动</strong>、<strong>固定定位</strong>和<strong>绝对定位</strong>，不用转换，就可以给这个盒子直接设置宽度和高度等。<br><strong>同时注意：</strong><br>浮动元素、绝对定位(固定定位）元素的都不会触发外边距合并的问题。 （我们以前是用padding border overflow解决的）<br>也就是说，我们给盒子改为了浮动或者定位，就不会有垂直外边距合并的问题了。</li>
+</ul>
+<h2 id="6-综合演练-淘宝轮播图"><a href="#6-综合演练-淘宝轮播图" class="headerlink" title="6. 综合演练 - 淘宝轮播图"></a>6. 综合演练 - 淘宝轮播图</h2><p><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/28%E6%B7%98%E5%AE%9D.png"></p>
+<h4 id="圆角矩形设置4个角"><a href="#圆角矩形设置4个角" class="headerlink" title="圆角矩形设置4个角"></a>圆角矩形设置4个角</h4><p>圆角矩形可以为4个角分别设置圆度， 但是是有顺序的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">border-top-left-radius:20px;</span><br><span class="line">border-top-right-radius:20px;</span><br><span class="line">border-bottom-right-radius:20px;</span><br><span class="line">border-bottom-left-radius:20px;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>如果4个角，数值相同</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">border-radius</span>: 15<span class="selector-tag">px</span>;</span><br></pre></td></tr></table></figure></li>
+<li><p>里面数值不同，我们也可以按照简写的形式，具体格式如下:</p>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">border-radius</span>: 左上角 右上角  右下角  左下角;</span><br></pre></td></tr></table></figure>
+<p>还是遵循的顺时针。</p>
+<h2 id="7-定位小结"><a href="#7-定位小结" class="headerlink" title="7. 定位小结"></a>7. 定位小结</h2><table>
+<thead>
+<tr>
+<th>定位模式</th>
+<th>是否脱标占有位置</th>
+<th align="left">移动位置基准</th>
+<th>模式转换（行内块）</th>
+<th>使用情况</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>静态static</td>
+<td>不脱标，正常模式</td>
+<td align="left">正常模式</td>
+<td>不能</td>
+<td>几乎不用</td>
+</tr>
+<tr>
+<td>相对定位relative</td>
+<td>不脱标，占有位置</td>
+<td align="left">相对自身位置移动</td>
+<td>不能</td>
+<td>基本单独使用</td>
+</tr>
+<tr>
+<td>绝对定位absolute</td>
+<td>完全脱标，不占有位置</td>
+<td align="left">相对于定位父级移动位置</td>
+<td>能</td>
+<td>要和定位父级元素搭配使用</td>
+</tr>
+<tr>
+<td>固定定位fixed</td>
+<td>完全脱标，不占有位置</td>
+<td align="left">相对于浏览器移动位置</td>
+<td>能</td>
+<td>单独使用，不需要父级</td>
+</tr>
+</tbody></table>
+<p><strong>注意</strong>：</p>
+<ol>
+<li><strong>边偏移</strong>需要和<strong>定位模式</strong>联合使用，<strong>单独使用无效</strong>；</li>
+<li><code>top</code> 和 <code>bottom</code> 不要同时使用；</li>
+<li><code>left</code> 和 <code>right</code> 不要同时使用。</li>
+</ol>
+<h2 id="8-网页布局总结"><a href="#8-网页布局总结" class="headerlink" title="8. 网页布局总结"></a>8. 网页布局总结</h2><p>一个完整的网页，有标准流 、 浮动 、 定位 一起完成布局的。每个都有自己的专门用法。</p>
+<h4 id="1-标准流"><a href="#1-标准流" class="headerlink" title="1). 标准流"></a>1). 标准流</h4><p>可以让盒子上下排列 或者 左右排列的</p>
+<h4 id="2-浮动"><a href="#2-浮动" class="headerlink" title="2). 浮动"></a>2). 浮动</h4><p>可以让多个块级元素一行显示  或者 左右对齐盒子   浮动的盒子就是按照顺序左右排列 </p>
+<h4 id="3-定位"><a href="#3-定位" class="headerlink" title="3). 定位"></a>3). 定位</h4><p>定位最大的特点是有层叠的概念，就是可以让多个盒子 前后 叠压来显示。 但是每个盒子需要测量数值。</p>
 
                                             
                                                 <!-- 添加版权声明 -->
                                                 
                                                     
-                                                            <div class="declare" hidden="hidden"></div>
+                                                        <div class="declare">
+                                                            <strong>本文作者：</strong>
                                                             
+                                                                kszy
+                                                                    
+                                                                            <br>
+                                                                            <strong>本文链接：</strong>
+                                                                            <a href="https://ChenYiPeng-9.github.io/2021/02/22/CSS定位(二)/" title="CSS定位(二)" target="_blank">
+                                                                                https://ChenYiPeng-9.github.io/
+                                                                                    2021/02/22/CSS定位(二)/
+                                                                            </a>
+                                                                            <br>
+                                                                            <strong>版权声明：</strong> 本作品采用
+                                                                            <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                                                                                知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议
+                                                                            </a>
+                                                                            进行许可。转载请注明出处！
+                                                                            
+                                                        </div>
+                                                        
                                                                 <!-- 添加版权声明 -->
 
                                                                 
@@ -269,6 +400,17 @@
 	</div>
 
                         
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/CSS//" class="article-tag-list-link color4">CSS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
                             
 
@@ -318,7 +460,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://chenyipeng-9.github.io/2021/02/01/3/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://chenyipeng-9.github.io/2021/02/22/CSS%E5%AE%9A%E4%BD%8D(%E4%BA%8C)/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -332,15 +474,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2021/02/01/2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          my first blog article
-        
-      </div>
-    </a>
   
+    <a href="/2021/02/21/CSS%E5%AE%9A%E4%BD%8D(%E4%B8%80)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">CSS定位(一)</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -365,7 +503,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%AE%9A%E4%BD%8D-position-%E7%9A%84%E6%A1%88%E4%BE%8B"><span class="toc-number">1.</span> <span class="toc-text">4. 定位(position)的案例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E5%93%88%E6%A0%B9%E8%BE%BE%E6%96%AF"><span class="toc-number">1.1.</span> <span class="toc-text">4.1 哈根达斯</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%93%88%E6%A0%B9%E8%BE%BE%E6%96%AF%E5%88%86%E6%9E%90"><span class="toc-number">1.1.1.</span> <span class="toc-text">哈根达斯分析</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E4%BB%BF%E6%96%B0%E6%B5%AA%E5%A4%B4%E9%83%A8%E5%92%8C%E5%B9%BF%E5%91%8A"><span class="toc-number">1.2.</span> <span class="toc-text">4.2 仿新浪头部和广告</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B0%E6%B5%AA%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90"><span class="toc-number">1.2.1.</span> <span class="toc-text">新浪案例分析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4-1-%E2%80%94%E2%80%94-%E9%A1%B6%E9%83%A8%E5%9B%BE%E7%89%87%E5%92%8C%E5%BA%95%E9%83%A8%E5%86%85%E5%AE%B9"><span class="toc-number">1.2.2.</span> <span class="toc-text">步骤 1 —— 顶部图片和底部内容</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4-2-%E2%80%94%E2%80%94-%E5%B7%A6%E5%8F%B3%E4%B8%A4%E4%BE%A7%E5%B9%BF%E5%91%8A"><span class="toc-number">1.2.3.</span> <span class="toc-text">步骤 2 —— 左右两侧广告</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E5%AE%9A%E4%BD%8D-position-%E7%9A%84%E6%89%A9%E5%B1%95"><span class="toc-number">2.</span> <span class="toc-text">5. 定位(position)的扩展</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E7%9A%84%E7%9B%92%E5%AD%90%E5%B1%85%E4%B8%AD"><span class="toc-number">2.1.</span> <span class="toc-text">5.1 绝对定位的盒子居中</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%92%E5%AD%90%E5%B1%85%E4%B8%AD%E5%AE%9A%E4%BD%8D%E7%A4%BA%E6%84%8F%E5%9B%BE%E3%80%81"><span class="toc-number">2.1.1.</span> <span class="toc-text">盒子居中定位示意图、</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-%E5%A0%86%E5%8F%A0%E9%A1%BA%E5%BA%8F%EF%BC%88z-index%EF%BC%89"><span class="toc-number">2.2.</span> <span class="toc-text">5.2 堆叠顺序（z-index）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-%E5%AE%9A%E4%BD%8D%E6%94%B9%E5%8F%98display%E5%B1%9E%E6%80%A7"><span class="toc-number">2.3.</span> <span class="toc-text">5.3 定位改变display属性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E7%BB%BC%E5%90%88%E6%BC%94%E7%BB%83-%E6%B7%98%E5%AE%9D%E8%BD%AE%E6%92%AD%E5%9B%BE"><span class="toc-number">3.</span> <span class="toc-text">6. 综合演练 - 淘宝轮播图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E8%AE%BE%E7%BD%AE4%E4%B8%AA%E8%A7%92"><span class="toc-number">3.0.1.</span> <span class="toc-text">圆角矩形设置4个角</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E5%AE%9A%E4%BD%8D%E5%B0%8F%E7%BB%93"><span class="toc-number">4.</span> <span class="toc-text">7. 定位小结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E7%BD%91%E9%A1%B5%E5%B8%83%E5%B1%80%E6%80%BB%E7%BB%93"><span class="toc-number">5.</span> <span class="toc-text">8. 网页布局总结</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%A0%87%E5%87%86%E6%B5%81"><span class="toc-number">5.0.1.</span> <span class="toc-text">1). 标准流</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%B5%AE%E5%8A%A8"><span class="toc-number">5.0.2.</span> <span class="toc-text">2). 浮动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%AE%9A%E4%BD%8D"><span class="toc-number">5.0.3.</span> <span class="toc-text">3). 定位</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
