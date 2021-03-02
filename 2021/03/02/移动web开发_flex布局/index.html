@@ -6,28 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://ChenYiPeng-9.github.io">
-  <title>移动端开发之流式布局 | 小菜鸡的琐碎生活</title>
+  <title>移动开发之flex布局 | 小菜鸡的琐碎生活</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="2021&#x2F;3&#x2F;1  周一  雨">
+  <meta name="description" content="2021&#x2F;3&#x2F;2  周二  晴">
 <meta property="og:type" content="article">
-<meta property="og:title" content="移动端开发之流式布局">
-<meta property="og:url" content="https://chenyipeng-9.github.io/2021/03/01/web%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E4%B9%8B%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/index.html">
+<meta property="og:title" content="移动开发之flex布局">
+<meta property="og:url" content="https://chenyipeng-9.github.io/2021/03/02/%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91_flex%E5%B8%83%E5%B1%80/index.html">
 <meta property="og:site_name" content="小菜鸡的琐碎生活">
-<meta property="og:description" content="2021&#x2F;3&#x2F;1  周一  雨">
+<meta property="og:description" content="2021&#x2F;3&#x2F;2  周二  晴">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/1.png">
-<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/2.png">
-<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/3.png">
-<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/4.png">
-<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/9.jpg">
-<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/6.jpg">
-<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/7.jpg">
-<meta property="article:published_time" content="2021-03-01T13:42:35.751Z">
-<meta property="article:modified_time" content="2021-03-01T13:56:58.917Z">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/1.JPG">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/2.JPG">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/3.JPG">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/4.JPG">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/5.JPG">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/6.JPG">
+<meta property="article:published_time" content="2021-03-02T13:44:21.757Z">
+<meta property="article:modified_time" content="2021-03-02T13:42:52.289Z">
 <meta property="article:author" content="kszy">
 <meta property="article:tag" content="前端">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/1.png">
+<meta name="twitter:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/1.JPG">
   
     <link rel="alternative" href="/atom.xml" title="小菜鸡的琐碎生活" type="application/atom+xml">
   
@@ -222,85 +221,115 @@
                                 <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
                             </div>
                             <div id="js-content" class="content-ll">
-                                <article id="post-web移动端开发之流式布局" class="article article-type-post " itemscope itemprop="blogPost">
+                                <article id="post-移动web开发_flex布局" class="article article-type-post " itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
   
     <h1 class="article-title" itemprop="name">
-      移动端开发之流式布局
+      移动开发之flex布局
     </h1>
   
 
                     
-                        <a href="/2021/03/01/web%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E4%B9%8B%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/" class="archive-article-date">
-  	<time datetime="2021-03-01T13:42:35.751Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-01</time>
+                        <a href="/2021/03/02/%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91_flex%E5%B8%83%E5%B1%80/" class="archive-article-date">
+  	<time datetime="2021-03-02T13:44:21.757Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-02</time>
 </a>
                             
             </header>
             
                 <div class="article-entry" itemprop="articleBody">
                     
-                                        <p>2021/3/1  周一  雨  </p>
+                                        <p>2021/3/2  周二  晴 </p>
 <a id="more"></a>
-<h3 id="1-0-移动端基础"><a href="#1-0-移动端基础" class="headerlink" title="1.0 移动端基础"></a>1.0 移动端基础</h3><h4 id="1-1浏览器现状"><a href="#1-1浏览器现状" class="headerlink" title="1.1浏览器现状"></a>1.1浏览器现状</h4><p> PC端常见浏览器：360浏览器、谷歌浏览器、火狐浏览器、QQ浏览器、百度浏览器、搜狗浏览器、IE浏览器。<br>移动端常见浏览器：UC浏览器，QQ浏览器，欧朋浏览器，百度手机浏览器，360安全浏览器，谷歌浏览器，搜狗手机浏览器，猎豹浏览器，以及其他杂牌浏览器。<br><strong>总结：兼容移动端主流浏览器，处理Webkit内核浏览器即可。</strong></p>
-<h4 id="1-2-手机屏幕的现状"><a href="#1-2-手机屏幕的现状" class="headerlink" title="1.2 手机屏幕的现状"></a>1.2 手机屏幕的现状</h4><ul>
-<li>移动端设备屏幕尺寸非常多，碎片化严重。</li>
-<li>Android设备有多种分辨率。</li>
-<li>作为开发者无需关注这些分辨率，因为我们常用的尺寸单位是 px 。55555</li>
+<h2 id="1-0传统布局和flex布局对比"><a href="#1-0传统布局和flex布局对比" class="headerlink" title="1.0传统布局和flex布局对比"></a>1.0传统布局和flex布局对比</h2><h3 id="1-1传统布局"><a href="#1-1传统布局" class="headerlink" title="1.1传统布局"></a>1.1传统布局</h3><ul>
+<li>兼容性好</li>
+<li>布局繁琐</li>
+<li>局限性，不能再移动端很好的布局<h3 id="1-2-flex布局"><a href="#1-2-flex布局" class="headerlink" title="1.2 flex布局"></a>1.2 flex布局</h3></li>
+<li>操作方便，布局极其简单，移动端使用比较广泛</li>
+<li>pc端浏览器支持情况比较差</li>
+<li>IE11或更低版本不支持flex或仅支持部分<h3 id="1-3-建议"><a href="#1-3-建议" class="headerlink" title="1.3 建议"></a>1.3 建议</h3></li>
+<li> 如果是pc端页面布局，还是采用传统方式</li>
+<li>如果是移动端或者是不考虑兼容的pc则采用flex</li>
 </ul>
-<h4 id="1-3常见移动端屏幕尺寸"><a href="#1-3常见移动端屏幕尺寸" class="headerlink" title="1.3常见移动端屏幕尺寸"></a>1.3常见移动端屏幕尺寸</h4><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/1.png" style="zoom:67%;" />
+<h2 id="2-0-flex布局原理"><a href="#2-0-flex布局原理" class="headerlink" title="2.0 flex布局原理"></a>2.0 flex布局原理</h2><ul>
+<li>flex 是 flexible Box 的缩写，意为”弹性布局”，用来为盒状模型提供最大的灵活性，任何一个容器都可以指定为 flex 布局。</li>
+<li>当我们为父盒子设为 flex 布局以后，子元素的 float、clear 和 vertical-align 属性将失效。</li>
+<li>flex布局又叫伸缩布局 、弹性布局 、伸缩盒布局 、弹性盒布局 </li>
+<li>采用 Flex 布局的元素，称为 Flex 容器，简称”容器”。它的所有子元素自动成为容器成员，称为 Flex 项目，简称”项目”。</li>
+</ul>
+<p><strong>总结</strong>：就是通过给父盒子添加flex属性，来控制子盒子的位置和排列方式</p>
+<h2 id="3-0-父项常见属性"><a href="#3-0-父项常见属性" class="headerlink" title="3.0 父项常见属性"></a>3.0 父项常见属性</h2><ul>
+<li>flex-direction：设置主轴的方向</li>
+<li>justify-content：设置主轴上的子元素排列方式</li>
+<li>flex-wrap：设置子元素是否换行  </li>
+<li>align-content：设置侧轴上的子元素的排列方式（多行）</li>
+<li>align-items：设置侧轴上的子元素排列方式（单行）</li>
+<li>flex-flow：复合属性，相当于同时设置了 flex-direction 和 flex-wrap<h3 id="3-1-flex-direction设置主轴的方向"><a href="#3-1-flex-direction设置主轴的方向" class="headerlink" title="3.1 flex-direction设置主轴的方向"></a>3.1 flex-direction设置主轴的方向</h3></li>
+<li>在 flex 布局中，是分为主轴和侧轴两个方向，同样的叫法有 ： 行和列、x 轴和y 轴</li>
+<li>默认主轴方向就是 x 轴方向，水平向右</li>
+<li>默认侧轴方向就是 y 轴方向，水平向下<img src="https://gitee.com/chenyipeng9/blog/raw/master/img/1.JPG" style="zoom:80%;" /></li>
+<li>注意： 主轴和侧轴是会变化的，就看 flex-direction 设置谁为主轴，剩下的就是侧轴。而我们的子元素是跟着主轴来排列的<img src="https://gitee.com/chenyipeng9/blog/raw/master/img/2.JPG" style="zoom:80%;" />
+### 3.2 justify-content 设置主轴上的子元素排列方式
+<img src="https://gitee.com/chenyipeng9/blog/raw/master/img/3.JPG" style="zoom:80%;" />
 
-<h4 id="1-4移动端调试方法"><a href="#1-4移动端调试方法" class="headerlink" title="1.4移动端调试方法"></a>1.4移动端调试方法</h4><ul>
-<li>Chrome DevTools（谷歌浏览器）的模拟手机调试</li>
-<li>搭建本地web服务器，手机和服务器一个局域网内，通过手机访问服务器</li>
-<li>使用外网服务器，直接IP或域名访问</li>
+</li>
 </ul>
-<h3 id="2-0-视口"><a href="#2-0-视口" class="headerlink" title="2.0 视口"></a>2.0 视口</h3><p>视口（viewport）就是浏览器显示页面内容的屏幕区域。 视口可以分为布局视口、视觉视口和理想视口</p>
-<h4 id="2-1-布局视口-layout-viewport"><a href="#2-1-布局视口-layout-viewport" class="headerlink" title="2.1 布局视口 layout viewport"></a>2.1 布局视口 layout viewport</h4><p>一般移动设备的浏览器都默认设置了一个布局视口，用于解决早期的PC端页面在手机上显示的问题。<br>iOS, Android基本都将这个视口分辨率设置为 980px，所以PC上的网页大多都能在手机上呈现，只不过元素看上去很小，一般默认可以通过手动缩放网页。<br><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/2.png"></p>
-<h4 id="2-2视觉视口-visual-viewport"><a href="#2-2视觉视口-visual-viewport" class="headerlink" title="2.2视觉视口 visual viewport"></a>2.2视觉视口 visual viewport</h4><p>字面意思，它是用户正在看到的网站的区域。注意：是网站的区域。<br>我们可以通过缩放去操作视觉视口，但不会影响布局视口，布局视口仍保持原来的宽度。<br><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/3.png"></p>
-<h4 id="2-3理想视口-ideal-viewport"><a href="#2-3理想视口-ideal-viewport" class="headerlink" title="2.3理想视口 ideal viewport"></a>2.3理想视口 ideal viewport</h4><p>为了使网站在移动端有最理想的浏览和阅读宽度而设定<br>理想视口，对设备来讲，是最理想的视口尺寸<br>需要手动添写meta视口标签通知浏览器操作<br>meta视口标签的主要目的：布局视口的宽度应该与理想视口的宽度一致，简单理解就是设备有多宽，我们布局的视口就多宽<br><strong>总结：我们开发最终会用理想视口，而理想视口就是将布局视口的宽度修改为视觉视口</strong></p>
-<h4 id="2-4meta标签"><a href="#2-4meta标签" class="headerlink" title="2.4meta标签"></a>2.4meta标签</h4><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/4.png" style="zoom: 80%;" />
-最标准的viewport设置
+<h3 id="3-3-flex-wrap设置是否换行"><a href="#3-3-flex-wrap设置是否换行" class="headerlink" title="3.3 flex-wrap设置是否换行"></a>3.3 flex-wrap设置是否换行</h3><ul>
+<li>默认情况下，项目都排在一条线（又称”轴线”）上。flex-wrap属性定义，flex布局中默认是不换行的。</li>
+<li>nowrap 不换行</li>
+<li>wrap 换行<h3 id="3-4-align-items-设置侧轴上的子元素排列方式（单行-）"><a href="#3-4-align-items-设置侧轴上的子元素排列方式（单行-）" class="headerlink" title="3.4 align-items 设置侧轴上的子元素排列方式（单行 ）"></a>3.4 align-items 设置侧轴上的子元素排列方式（单行 ）</h3></li>
+<li>该属性是控制子项在侧轴（默认是y轴）上的排列方式  在子项为单项（单行）的时候使用</li>
+<li>flex-start 从头部开始</li>
+<li>flex-end 从尾部开始</li>
+<li>center 居中显示</li>
+<li>stretch 拉伸<h3 id="3-5-align-content-设置侧轴上的子元素的排列方式（多行）"><a href="#3-5-align-content-设置侧轴上的子元素的排列方式（多行）" class="headerlink" title="3.5 align-content  设置侧轴上的子元素的排列方式（多行）"></a>3.5 align-content  设置侧轴上的子元素的排列方式（多行）</h3>设置子项在侧轴上的排列方式 并且只能用于子项出现 换行 的情况（多行）在单行下是没有效果的。<img src="https://gitee.com/chenyipeng9/blog/raw/master/img/4.JPG" style="zoom:80%;" />
 
-<ul>
-<li>视口宽度和设备保持一致</li>
-<li>视口的默认缩放比例1.0</li>
-<li>不允许用户自行缩放</li>
-<li>最大允许的缩放比例1.0</li>
-<li>最小允许的缩放比例1.0</li>
+</li>
 </ul>
-<h3 id="3-0二倍图"><a href="#3-0二倍图" class="headerlink" title="3.0二倍图"></a>3.0二倍图</h3><h4 id="3-1物理像素-amp-物理像素比"><a href="#3-1物理像素-amp-物理像素比" class="headerlink" title="3.1物理像素&amp;物理像素比"></a>3.1物理像素&amp;物理像素比</h4><p>物理像素点指的是屏幕显示的最小颗粒，是物理真实存在的。这是厂商在出厂时就设置好了,比如苹果6 是  750* 1334<br>我们开发时候的1px 不是一定等于1个物理像素的<br>一个px的能显示的物理像素点的个数，称为物理像素比或屏幕像素比<br>如果把1张100*100的图片放到手机里面会按照物理像素比给我们缩放<br>lRetina（视网膜屏幕）是一种显示技术，可以将把更多的物理像素点压缩至一块屏幕里，从而达到更高的分辨率，并提高屏幕显示的细腻程度。<br>对于一张 50px * 50px 的图片,在手机或 Retina 屏中打开，按照刚才的物理像素比会放大倍数，这样会造成图片模糊<br>在标准的viewport设置中，使用倍图来提高图片质量，解决在高清设备中的模糊问题<br>通常使用二倍图， 因为iPhone 6 的影响背景图片 注意缩放问题</p>
-<h4 id="3-2背景缩放background-size"><a href="#3-2背景缩放background-size" class="headerlink" title="3.2背景缩放background-size"></a>3.2背景缩放background-size</h4><p>background-size 属性规定背景图像的尺寸</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background-size: 背景图片宽度 背景图片高度;</span><br></pre></td></tr></table></figure>
-<p>单位： 长度|百分比|cover|contain;<br>cover把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。<br>contain把图像图像扩展至最大尺寸，以使其宽度和高度完全适应内容区域</p>
-<h3 id="4-0-移动开发选择和技术解决方案"><a href="#4-0-移动开发选择和技术解决方案" class="headerlink" title="4.0 移动开发选择和技术解决方案"></a>4.0 移动开发选择和技术解决方案</h3><h4 id="4-1移动端主流方案"><a href="#4-1移动端主流方案" class="headerlink" title="4.1移动端主流方案"></a>4.1移动端主流方案</h4><p>1.单独制作移动端页面（主流）<br>通常情况下，网址域名前面加 m(mobile)<br>可以打开移动端。通过判断设备，如果是移动设备打开，则跳到移动端页面。<br>也就是说，PC端和移动端为两套网站，pc端是pc断的样式，移动端在写一套，专门针对移动端适配的一套网站<br>京东pc端：<br><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/9.jpg"><br>京东移动端：<br><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/6.jpg" style="zoom:67%;" /><br>2.响应式页面兼容移动端（其次）<br><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/7.jpg" style="zoom:67%;" /><br>响应式网站：即pc和移动端共用一套网站，只不过在不同屏幕下，样式会自动适配</p>
-<h4 id="4-2-移动端技术解决方案"><a href="#4-2-移动端技术解决方案" class="headerlink" title="4.2 移动端技术解决方案"></a>4.2 移动端技术解决方案</h4><p>1.移动端浏览器兼容问题<br>移动端浏览器基本以 webkit 内核为主，因此我们就考虑webkit兼容性问题。<br>我们可以放心使用 H5 标签和 CSS3 样式。<br>同时我们浏览器的私有前缀我们只需要考虑添加 webkit 即可<br>2.移动端公共样式<br>移动端 CSS 初始化推荐使用 normalize.css/<br>Normalize.css：保护了有价值的默认值<br>Normalize.css：修复了浏览器的bug<br>Normalize.css：是模块化的<br>Normalize.css：拥有详细的文档<br>官网地址： <a target="_blank" rel="noopener" href="http://necolas.github.io/normalize.css/">http://necolas.github.io/normalize.css/</a></p>
-<h4 id="4-3-移动端大量使用-CSS3盒子模型box-sizin"><a href="#4-3-移动端大量使用-CSS3盒子模型box-sizin" class="headerlink" title="4.3 移动端大量使用 CSS3盒子模型box-sizin"></a>4.3 移动端大量使用 CSS3盒子模型box-sizin</h4><p>传统模式宽度计算：盒子的宽度 = CSS中设置的width + border + padding<br>CSS3盒子模型：     盒子的宽度=  CSS中设置的宽度width 里面包含了 border 和 padding<br>也就是说，我们的CSS3中的盒子模型， padding 和 border 不会撑大盒子了</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;*CSS3盒子模型*&#x2F;</span><br><span class="line">box-sizing: border-box;</span><br><span class="line">&#x2F;*传统盒子模型*&#x2F;</span><br><span class="line">box-sizing: content-box;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>移动端可以全部CSS3 盒子模型<br>PC端如果完全需要兼容，我们就用传统模式，如果不考虑兼容性，我们就选择 CSS3 盒子模型</p>
-<h4 id="4-4移动端特殊样式"><a href="#4-4移动端特殊样式" class="headerlink" title="4.4移动端特殊样式"></a>4.4移动端特殊样式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;*CSS3盒子模型*&#x2F;</span><br><span class="line">box-sizing: border-box;</span><br><span class="line">-webkit-box-sizing: border-box;</span><br><span class="line">&#x2F;*点击高亮我们需要清除清除  设置为transparent 完成透明*&#x2F;</span><br><span class="line">-webkit-tap-highlight-color: transparent;</span><br><span class="line">&#x2F;*在移动端浏览器默认的外观在iOS上加上这个属性才能给按钮和输入框自定义样式*&#x2F;</span><br><span class="line">-webkit-appearance: none;</span><br><span class="line">&#x2F;*禁用长按页面时的弹出菜单*&#x2F;</span><br><span class="line">img,a &#123; -webkit-touch-callout: none; &#125;</span><br></pre></td></tr></table></figure>
-<h3 id="5-0移动端常见布局"><a href="#5-0移动端常见布局" class="headerlink" title="5.0移动端常见布局"></a>5.0移动端常见布局</h3><p>移动端单独制作</p>
-<ul>
-<li>流式布局（百分比布局）</li>
-<li>flex 弹性布局（强烈推荐）</li>
-<li>less+rem+媒体查询布局</li>
-<li>混合布局</li>
+<h3 id="3-6-align-content-和align-items区别"><a href="#3-6-align-content-和align-items区别" class="headerlink" title="3.6 align-content 和align-items区别"></a>3.6 align-content 和align-items区别</h3><ul>
+<li>align-items  适用于单行情况下， 只有上对齐、下对齐、居中和 拉伸</li>
+<li>align-content适应于换行（多行）的情况下（单行情况下无效）， 可以设置 上对齐、下对齐、居中、拉伸以及平均分配剩余空间等属性值。 </li>
+<li>总结就是单行找align-items  多行找 align-content<h3 id="3-7-flex-flow-属性是-flex-direction-和-flex-wrap-属性的复合属性"><a href="#3-7-flex-flow-属性是-flex-direction-和-flex-wrap-属性的复合属性" class="headerlink" title="3.7 flex-flow 属性是 flex-direction 和 flex-wrap 属性的复合属性"></a>3.7 flex-flow 属性是 flex-direction 和 flex-wrap 属性的复合属性</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flex-flow:row wrap;</span><br></pre></td></tr></table></figure>
+<h2 id="4-0-flex布局子项常见属性"><a href="#4-0-flex布局子项常见属性" class="headerlink" title="4.0 flex布局子项常见属性"></a>4.0 flex布局子项常见属性</h2></li>
+<li>flex子项目占的份数</li>
+<li>align-self控制子项自己在侧轴的排列方式</li>
+<li>order属性定义子项的排列顺序（前后顺序）<h3 id="4-1-flex-属性"><a href="#4-1-flex-属性" class="headerlink" title="4.1  flex 属性"></a>4.1  flex 属性</h3>flex 属性定义子项目分配剩余空间，用flex来表示占多少份数。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.item &#123;</span><br><span class="line">    flex: &lt;number&gt;; &#x2F;* 默认值 0 *&#x2F;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="4-2-align-self控制子项自己在侧轴上的排列方式"><a href="#4-2-align-self控制子项自己在侧轴上的排列方式" class="headerlink" title="4.2 align-self控制子项自己在侧轴上的排列方式"></a>4.2 align-self控制子项自己在侧轴上的排列方式</h3>align-self 属性允许单个项目有与其他项目不一样的对齐方式，可覆盖 align-items 属性。<br>默认值为 auto，表示继承父元素的 align-items 属性，如果没有父元素，则等同于 stretch。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">span:nth-child(2) &#123;</span><br><span class="line">      &#x2F;* 设置自己在侧轴上的排列方式 *&#x2F;</span><br><span class="line">      align-self: flex-end;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="4-3-order-属性定义项目的排列顺序"><a href="#4-3-order-属性定义项目的排列顺序" class="headerlink" title="4.3 order 属性定义项目的排列顺序"></a>4.3 order 属性定义项目的排列顺序</h3>数值越小，排列越靠前，默认为0。<br>注意：和 z-index 不一样。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.item &#123;</span><br><span class="line">    order: &lt;number&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="5-0-携程网首页案例制作"><a href="#5-0-携程网首页案例制作" class="headerlink" title="5.0 携程网首页案例制作"></a>5.0 携程网首页案例制作</h2>携程网链接：<a target="_blank" rel="noopener" href="http://m.ctrip.com/">http://m.ctrip.com</a></li>
 </ul>
-<p>响应式</p>
-<ul>
-<li>媒体查询</li>
-<li>bootstarp</li>
-</ul>
-<p>流式布局：<br>流式布局，就是百分比布局，也称非固定像素布局。<br>通过盒子的宽度设置成百分比来根据屏幕的宽度来进行伸缩，不受固定像素的限制，内容向两侧填充。<br>流式布局方式是移动web开发使用的比较常见的布局方式。</p>
+<p>1.技术选型<br>方案：我们采取单独制作移动页面方案<br>技术：布局采取flex布局<br>2.搭建相关文件夹<br><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/5.JPG" style="zoom:80%;" /><br>3.设置视口标签以及引入初始化样式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, user-scalable&#x3D;no,initial-scale&#x3D;1.0, maximum-scale&#x3D;1.0, minimum-scale&#x3D;1.0&quot;&gt;</span><br><span class="line">&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;css&#x2F;normalize.css&quot;&gt;</span><br><span class="line">&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;css&#x2F;index.css&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>4.常用初始化样式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  max-width: 540px;</span><br><span class="line">  min-width: 320px;</span><br><span class="line">  margin: 0 auto;</span><br><span class="line">  font: normal 14px&#x2F;1.5 Tahoma,&quot;Lucida Grande&quot;,Verdana,&quot;Microsoft Yahei&quot;,STXihei,hei;</span><br><span class="line">  color: #000;</span><br><span class="line">  background: #f2f2f2;</span><br><span class="line">  overflow-x: hidden;</span><br><span class="line">  -webkit-tap-highlight-color: transparent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>5.模块名字划分<br><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/6.JPG" style="zoom: 50%;" /></p>
 
                                             
                                                 <!-- 添加版权声明 -->
                                                 
                                                     
-                                                            <div class="declare" hidden="hidden"></div>
+                                                        <div class="declare">
+                                                            <strong>本文作者：</strong>
                                                             
+                                                                kszy
+                                                                    
+                                                                            <br>
+                                                                            <strong>本文链接：</strong>
+                                                                            <a href="https://ChenYiPeng-9.github.io/2021/03/02/移动web开发_flex布局/" title="移动开发之flex布局" target="_blank">
+                                                                                https://ChenYiPeng-9.github.io/
+                                                                                    2021/03/02/移动web开发_flex布局/
+                                                                            </a>
+                                                                            <br>
+                                                                            <strong>版权声明：</strong> 本作品采用
+                                                                            <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                                                                                知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议
+                                                                            </a>
+                                                                            进行许可。转载请注明出处！
+                                                                            
+                                                        </div>
+                                                        
                                                                 <!-- 添加版权声明 -->
 
                                                                 
@@ -380,7 +409,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://chenyipeng-9.github.io/2021/03/01/web%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E4%B9%8B%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://chenyipeng-9.github.io/2021/03/02/%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91_flex%E5%B8%83%E5%B1%80/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -395,8 +424,8 @@
 <nav id="article-nav">
   
   
-    <a href="/2021/02/28/HTML5CSS3(%E5%9B%9B)/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">HTML5&amp;CSS3(四)</div>
+    <a href="/2021/03/01/%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91_%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">移动端开发之流式布局</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -423,7 +452,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-0-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%9F%BA%E7%A1%80"><span class="toc-number">1.</span> <span class="toc-text">1.0 移动端基础</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%B0%E7%8A%B6"><span class="toc-number">1.1.</span> <span class="toc-text">1.1浏览器现状</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-%E6%89%8B%E6%9C%BA%E5%B1%8F%E5%B9%95%E7%9A%84%E7%8E%B0%E7%8A%B6"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 手机屏幕的现状</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3%E5%B8%B8%E8%A7%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%B1%8F%E5%B9%95%E5%B0%BA%E5%AF%B8"><span class="toc-number">1.3.</span> <span class="toc-text">1.3常见移动端屏幕尺寸</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4%E7%A7%BB%E5%8A%A8%E7%AB%AF%E8%B0%83%E8%AF%95%E6%96%B9%E6%B3%95"><span class="toc-number">1.4.</span> <span class="toc-text">1.4移动端调试方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-0-%E8%A7%86%E5%8F%A3"><span class="toc-number">2.</span> <span class="toc-text">2.0 视口</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-%E5%B8%83%E5%B1%80%E8%A7%86%E5%8F%A3-layout-viewport"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 布局视口 layout viewport</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2%E8%A7%86%E8%A7%89%E8%A7%86%E5%8F%A3-visual-viewport"><span class="toc-number">2.2.</span> <span class="toc-text">2.2视觉视口 visual viewport</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3%E7%90%86%E6%83%B3%E8%A7%86%E5%8F%A3-ideal-viewport"><span class="toc-number">2.3.</span> <span class="toc-text">2.3理想视口 ideal viewport</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4meta%E6%A0%87%E7%AD%BE"><span class="toc-number">2.4.</span> <span class="toc-text">2.4meta标签</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-0%E4%BA%8C%E5%80%8D%E5%9B%BE"><span class="toc-number">3.</span> <span class="toc-text">3.0二倍图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1%E7%89%A9%E7%90%86%E5%83%8F%E7%B4%A0-amp-%E7%89%A9%E7%90%86%E5%83%8F%E7%B4%A0%E6%AF%94"><span class="toc-number">3.1.</span> <span class="toc-text">3.1物理像素&amp;物理像素比</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2%E8%83%8C%E6%99%AF%E7%BC%A9%E6%94%BEbackground-size"><span class="toc-number">3.2.</span> <span class="toc-text">3.2背景缩放background-size</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-0-%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E9%80%89%E6%8B%A9%E5%92%8C%E6%8A%80%E6%9C%AF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">4.</span> <span class="toc-text">4.0 移动开发选择和技术解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1%E7%A7%BB%E5%8A%A8%E7%AB%AF%E4%B8%BB%E6%B5%81%E6%96%B9%E6%A1%88"><span class="toc-number">4.1.</span> <span class="toc-text">4.1移动端主流方案</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%8A%80%E6%9C%AF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">4.2.</span> <span class="toc-text">4.2 移动端技术解决方案</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%A4%A7%E9%87%8F%E4%BD%BF%E7%94%A8-CSS3%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8Bbox-sizin"><span class="toc-number">4.3.</span> <span class="toc-text">4.3 移动端大量使用 CSS3盒子模型box-sizin</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%89%B9%E6%AE%8A%E6%A0%B7%E5%BC%8F"><span class="toc-number">4.4.</span> <span class="toc-text">4.4移动端特殊样式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-0%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%B8%B8%E8%A7%81%E5%B8%83%E5%B1%80"><span class="toc-number">5.</span> <span class="toc-text">5.0移动端常见布局</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-0%E4%BC%A0%E7%BB%9F%E5%B8%83%E5%B1%80%E5%92%8Cflex%E5%B8%83%E5%B1%80%E5%AF%B9%E6%AF%94"><span class="toc-number">1.</span> <span class="toc-text">1.0传统布局和flex布局对比</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1%E4%BC%A0%E7%BB%9F%E5%B8%83%E5%B1%80"><span class="toc-number">1.1.</span> <span class="toc-text">1.1传统布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-flex%E5%B8%83%E5%B1%80"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 flex布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E5%BB%BA%E8%AE%AE"><span class="toc-number">1.3.</span> <span class="toc-text">1.3 建议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-0-flex%E5%B8%83%E5%B1%80%E5%8E%9F%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">2.0 flex布局原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-0-%E7%88%B6%E9%A1%B9%E5%B8%B8%E8%A7%81%E5%B1%9E%E6%80%A7"><span class="toc-number">3.</span> <span class="toc-text">3.0 父项常见属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-flex-direction%E8%AE%BE%E7%BD%AE%E4%B8%BB%E8%BD%B4%E7%9A%84%E6%96%B9%E5%90%91"><span class="toc-number">3.1.</span> <span class="toc-text">3.1 flex-direction设置主轴的方向</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-flex-wrap%E8%AE%BE%E7%BD%AE%E6%98%AF%E5%90%A6%E6%8D%A2%E8%A1%8C"><span class="toc-number">3.2.</span> <span class="toc-text">3.3 flex-wrap设置是否换行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-align-items-%E8%AE%BE%E7%BD%AE%E4%BE%A7%E8%BD%B4%E4%B8%8A%E7%9A%84%E5%AD%90%E5%85%83%E7%B4%A0%E6%8E%92%E5%88%97%E6%96%B9%E5%BC%8F%EF%BC%88%E5%8D%95%E8%A1%8C-%EF%BC%89"><span class="toc-number">3.3.</span> <span class="toc-text">3.4 align-items 设置侧轴上的子元素排列方式（单行 ）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-align-content-%E8%AE%BE%E7%BD%AE%E4%BE%A7%E8%BD%B4%E4%B8%8A%E7%9A%84%E5%AD%90%E5%85%83%E7%B4%A0%E7%9A%84%E6%8E%92%E5%88%97%E6%96%B9%E5%BC%8F%EF%BC%88%E5%A4%9A%E8%A1%8C%EF%BC%89"><span class="toc-number">3.4.</span> <span class="toc-text">3.5 align-content  设置侧轴上的子元素的排列方式（多行）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-align-content-%E5%92%8Calign-items%E5%8C%BA%E5%88%AB"><span class="toc-number">3.5.</span> <span class="toc-text">3.6 align-content 和align-items区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-7-flex-flow-%E5%B1%9E%E6%80%A7%E6%98%AF-flex-direction-%E5%92%8C-flex-wrap-%E5%B1%9E%E6%80%A7%E7%9A%84%E5%A4%8D%E5%90%88%E5%B1%9E%E6%80%A7"><span class="toc-number">3.6.</span> <span class="toc-text">3.7 flex-flow 属性是 flex-direction 和 flex-wrap 属性的复合属性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-0-flex%E5%B8%83%E5%B1%80%E5%AD%90%E9%A1%B9%E5%B8%B8%E8%A7%81%E5%B1%9E%E6%80%A7"><span class="toc-number">4.</span> <span class="toc-text">4.0 flex布局子项常见属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-flex-%E5%B1%9E%E6%80%A7"><span class="toc-number">4.1.</span> <span class="toc-text">4.1  flex 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-align-self%E6%8E%A7%E5%88%B6%E5%AD%90%E9%A1%B9%E8%87%AA%E5%B7%B1%E5%9C%A8%E4%BE%A7%E8%BD%B4%E4%B8%8A%E7%9A%84%E6%8E%92%E5%88%97%E6%96%B9%E5%BC%8F"><span class="toc-number">4.2.</span> <span class="toc-text">4.2 align-self控制子项自己在侧轴上的排列方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-order-%E5%B1%9E%E6%80%A7%E5%AE%9A%E4%B9%89%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%8E%92%E5%88%97%E9%A1%BA%E5%BA%8F"><span class="toc-number">4.3.</span> <span class="toc-text">4.3 order 属性定义项目的排列顺序</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-0-%E6%90%BA%E7%A8%8B%E7%BD%91%E9%A6%96%E9%A1%B5%E6%A1%88%E4%BE%8B%E5%88%B6%E4%BD%9C"><span class="toc-number">5.</span> <span class="toc-text">5.0 携程网首页案例制作</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -504,7 +533,7 @@
                     <div class="footer-right">
                         <nav>
                             总文章数
-                            29
+                            30
                         </nav>
                     </div>
         </div>
