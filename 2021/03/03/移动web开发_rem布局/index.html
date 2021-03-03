@@ -6,15 +6,28 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://ChenYiPeng-9.github.io">
-  <title>Category: git | 小菜鸡的琐碎生活</title>
+  <title>移动开发之rem布局 | 小菜鸡的琐碎生活</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="小菜鸡的琐碎生活">
-<meta property="og:url" content="https://chenyipeng-9.github.io/categories/git/index.html">
+  <meta name="description" content="2021&#x2F;3&#x2F;3  周五  雨">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动开发之rem布局">
+<meta property="og:url" content="https://chenyipeng-9.github.io/2021/03/03/%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91_rem%E5%B8%83%E5%B1%80/index.html">
 <meta property="og:site_name" content="小菜鸡的琐碎生活">
+<meta property="og:description" content="2021&#x2F;3&#x2F;3  周五  雨">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/1111.jpg">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/2222.jpg">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/3333.png">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/4444.png">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/5555.jpg">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/6666.jpg">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/7777.jpg">
+<meta property="article:published_time" content="2021-03-03T14:07:12.070Z">
+<meta property="article:modified_time" content="2021-03-03T14:07:32.924Z">
 <meta property="article:author" content="kszy">
+<meta property="article:tag" content="前端">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/1111.jpg">
   
     <link rel="alternative" href="/atom.xml" title="小菜鸡的琐碎生活" type="application/atom+xml">
   
@@ -209,38 +222,129 @@
                                 <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
                             </div>
                             <div id="js-content" class="content-ll">
-                                
-                            
-                                
-                                    
-                                        
-                                            
-                                                    
-                                                        <section class="archives-wrap">
-                                                            <div class="archive-year-wrap">
-                                                                <a href="/archives/2021" class="archive-year">
-                                                                    2021
-                                                                </a>
-                                                            </div>
-                                                            <div class="archives">
-                                                                
-                                                                    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/02/03/Git/" class="archive-article-date">
-  	<time datetime="2021-02-03T15:01:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-03</time>
-</a>
-        </div>
-    	 
+                                <article id="post-移动web开发_rem布局" class="article article-type-post " itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/02/03/Git/">Git基础知识</a>
+    <h1 class="article-title" itemprop="name">
+      移动开发之rem布局
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+                    
+                        <a href="/2021/03/03/%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91_rem%E5%B8%83%E5%B1%80/" class="archive-article-date">
+  	<time datetime="2021-03-03T14:07:12.070Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-03</time>
+</a>
+                            
+            </header>
+            
+                <div class="article-entry" itemprop="articleBody">
+                    
+                                        <p>2021/3/3  周五  雨  </p>
+<a id="more"></a>
+<h1 id="移动web开发之rem布局"><a href="#移动web开发之rem布局" class="headerlink" title="移动web开发之rem布局"></a>移动web开发之rem布局</h1><h3 id="rem基础"><a href="#rem基础" class="headerlink" title="rem基础"></a>rem基础</h3><h4 id="rem单位"><a href="#rem单位" class="headerlink" title="rem单位"></a>rem单位</h4><p>rem (root em)是一个相对单位，类似于em，em是父元素字体大小。<br>不同的是rem的基准是相对于html元素的字体大小。<br>比如，根元素（html）设置font-size=12px; 非根元素设置width:2rem; 则换成px表示就是24px。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;* 根html 为 12px *&#x2F;</span><br><span class="line">html &#123;</span><br><span class="line">   font-size: 12px;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;* 此时 div 的字体大小就是 24px *&#x2F;       </span><br><span class="line">div &#123;</span><br><span class="line">    font-size: 2rem;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>rem的优势：父元素文字大小可能不一致， 但是整个页面只有一个html，可以很好来控制整个页面的元素大小。</p>
+<h3 id="媒体查询"><a href="#媒体查询" class="headerlink" title="媒体查询"></a>媒体查询</h3><h4 id="什么是媒体查询"><a href="#什么是媒体查询" class="headerlink" title="什么是媒体查询"></a>什么是媒体查询</h4><p>媒体查询（Media Query）是CSS3新语法。</p>
+<ul>
+<li>使用 @media查询，可以针对不同的媒体类型定义不同的样式</li>
+<li>@media 可以针对不同的屏幕尺寸设置不同的样式</li>
+<li>当你重置浏览器大小的过程中，页面也会根据浏览器的宽度和高度重新渲染页面 </li>
+<li>目前针对很多苹果手机、Android手机，平板等设备都用得到多媒体查询<h4 id="媒体查询语法规范"><a href="#媒体查询语法规范" class="headerlink" title="媒体查询语法规范"></a>媒体查询语法规范</h4></li>
+<li>用 @media开头 注意@符号</li>
+<li>mediatype  媒体类型</li>
+<li>关键字 and  not  only</li>
+<li>media feature 媒体特性必须有小括号包含<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@media mediatype and|not|only (media feature) &#123;</span><br><span class="line">    CSS-Code;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol>
+<li>mediatype 查询类型<pre><code>将不同的终端设备划分成不同的类型，称为媒体类型
+</code></pre>
+<img src="https://gitee.com/chenyipeng9/blog/raw/master/img/1111.jpg" style="zoom:80%;" /></li>
+<li>关键字<br>​       关键字将媒体类型或多个媒体特性连接到一起做为媒体查询的条件。</li>
+</ol>
+<ul>
+<li>and：可以将多个媒体特性连接到一起，相当于“且”的意思。</li>
+<li>not：排除某个媒体类型，相当于“非”的意思，可以省略。</li>
+<li>only：指定某个特定的媒体类型，可以省略。    </li>
+</ul>
+<ol start="3">
+<li>媒体特性<br>每种媒体类型都具体各自不同的特性，根据不同媒体类型的媒体特性设置不同的展示风格。我们暂且了解三个。<br>注意他们要加小括号包含<img src="https://gitee.com/chenyipeng9/blog/raw/master/img/2222.jpg" style="zoom:80%;" /></li>
+<li>媒体查询书写规则<br>注意： 为了防止混乱，媒体查询我们要按照从小到大或者从大到小的顺序来写,但是我们最喜欢的还是从小到大来写，这样代码更简洁<img src="https://gitee.com/chenyipeng9/blog/raw/master/img/3333.png" style="zoom: 67%;" />
+### less 基础
+#### 维护css弊端
+CSS 是一门非程序式语言，没有变量、函数、SCOPE（作用域）等概念。</li>
+</ol>
+<ul>
+<li>CSS 需要书写大量看似没有逻辑的代码，CSS 冗余度是比较高的。</li>
+<li>不方便维护及扩展，不利于复用。</li>
+<li>CSS 没有很好的计算能力</li>
+<li>非前端开发工程师来讲，往往会因为缺少 CSS 编写经验而很难写出组织良好且易于维护的 CSS 代码项目。 <h4 id="Less-介绍"><a href="#Less-介绍" class="headerlink" title="Less 介绍"></a>Less 介绍</h4>Less（LeanerStyle Sheets 的缩写）是一门 CSS扩展语言，也成为CSS预处理器。<br>做为 CSS的一种形式的扩展，它并没有减少CSS的功能，而是在现有的CSS语法上，为CSS加入程序式语言的特性。<br>它在CSS 的语法基础之上，引入了变量，Mixin（混入），运算以及函数等功能，大大简化了 CSS 的编写，并且降低了 CSS的维护成本，就像它的名称所说的那样，Less可以让我们用更少的代码做更多的事情。<br>Less中文网址：<a target="_blank" rel="noopener" href="http://lesscss.cn/">http://</a><a target="_blank" rel="noopener" href="http://lesscss.cn/">less</a><a target="_blank" rel="noopener" href="http://lesscss.cn/">css.cn/</a><br>常见的CSS预处理器：Sass、Less、Stylus<br>一句话：Less是一门 CSS 预处理语言，它扩展了CSS的动态特性。<br>Less安装<br>①安装nodejs，可选择版本(8.0)，网址：<a target="_blank" rel="noopener" href="http://nodejs.cn/download/">http://nodejs.cn/download/</a><br>②检查是否安装成功，使用cmd命令（win10是window+r 打开运行输入cmd）  —输入“node –v”查看版本即可<br>③基于nodejs在线安装Less，使用cmd命令“npm install -g less”即可<br>④检查是否安装成功，使用cmd命令“ lessc -v ”查看版本即可<br>Less 使用之变量<br>变量是指没有固定的值，可以改变的。因为我们CSS中的一些颜色和数值等经常使用。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@变量名:值;</span><br></pre></td></tr></table></figure></li>
+<li>必须有@为前缀</li>
+<li>不能包含特殊字符</li>
+<li>不能以数字开头</li>
+<li>大小写敏感<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@color: pink;</span><br></pre></td></tr></table></figure>
+Less 编译 vocode Less 插件<br>Easy LESS 插件用来把less文件编译为css文件<br>安装完毕插件，重新加载下 vscode。<br>只要保存一下Less文件，会自动生成CSS文件。<img src="https://gitee.com/chenyipeng9/blog/raw/master/img/4444.png" style="zoom:67%;" />
+Less 嵌套
+
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 将css改为less</span><br><span class="line">#header .logo &#123;</span><br><span class="line">  width: 300px;</span><br><span class="line">&#125;</span><br><span class="line">#header &#123;</span><br><span class="line">    .logo &#123;</span><br><span class="line">       width: 300px;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果遇见 （交集|伪类|伪元素选择器） ，利用&amp;进行连接</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">a:hover&#123;</span><br><span class="line">    color:red;</span><br><span class="line">&#125;</span><br><span class="line">a&#123;</span><br><span class="line">  &amp;:hover&#123;</span><br><span class="line">      color:red;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Less 运算<br>任何数字、颜色或者变量都可以参与运算。就是Less提供了加（+）、减（-）、乘（*）、除（/）算术运算。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;*Less 里面写*&#x2F;</span><br><span class="line">@witdh: 10px + 5;</span><br><span class="line">div &#123;</span><br><span class="line">    border: @witdh solid red;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;*生成的css*&#x2F;</span><br><span class="line">div &#123;</span><br><span class="line">  border: 15px solid red;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;*Less 甚至还可以这样 *&#x2F;</span><br><span class="line">width: (@width + 5) * 2;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>乘号（*）和除号（/）的写法  </li>
+<li>运算符中间左右有个空格隔开 1px + 5</li>
+<li>对于两个不同的单位的值之间的运算，运算结果的值取第一个值的单位 </li>
+<li>如果两个值之间只有一个值有单位，则运算结果就取该单位<h3 id="rem适配方案"><a href="#rem适配方案" class="headerlink" title="rem适配方案"></a>rem适配方案</h3></li>
+</ul>
+<p>1.让一些不能等比自适应的元素，达到当设备尺寸发生改变的时候，等比例适配当前设备。<br>2.使用媒体查询根据不同设备按比例设置html的字体大小，然后页面元素使用rem做尺寸单位，当html字体大小变化元素尺寸也会发生变化，从而达到等比缩放的适配。<br>技术方案：<br>1.less+rem+媒体查询<br>2.lflexible.js+rem<br>总结：<br>两种方案现在都存在。<br>方案2 更简单，现阶段大家无需了解里面的js代码。</p>
+<h4 id="rem实际开发适配方案1"><a href="#rem实际开发适配方案1" class="headerlink" title="rem实际开发适配方案1"></a>rem实际开发适配方案1</h4><p>①假设设计稿是750px<br>②假设我们把整个屏幕划分为15等份（划分标准不一可以是20份也可以是10等份）、<br>③每一份作为html字体大小，这里就是50px<br>④那么在320px设备的时候，字体大小为320/15就是  21.33px<br>⑤用我们页面元素的大小除以不同的 html字体大小会发现他们比例还是相同的<br>⑥比如我们以750为标准设计稿<br>⑦一个100<em>100像素的页面元素在  750屏幕下，  就是 100/ 50  转换为rem  是  2rem</em>2rem  比例是1比1<br>⑧320屏幕下，  html字体大小为21.33   则 2rem=  42.66px  此时宽和高都是 42.66  但是宽和高的比例还是 1比1<br>⑨但是已经能实现不同屏幕下  页面元素盒子等比例缩放的效果<br>总结：<br>①最后的公式：页面元素的rem值 =  页面元素值（px） /  （屏幕宽度  /  划分的份数）<br>②屏幕宽度/划分的份数就是 htmlfont-size 的大小<br>③或者：页面元素的rem值 =  页面元素值（px） /  html font-size 字体大小</p>
+<h3 id="苏宁首页"><a href="#苏宁首页" class="headerlink" title="苏宁首页"></a>苏宁首页</h3><p>苏宁首页地址 ：<a href="m.suning.com">苏宁首页</a><br>1、 技术选型<br>方案：我们采取单独制作移动页面方案<br>技术：布局采取rem适配布局（less + rem  + 媒体查询）<br>设计图： 本设计图采用 750px 设计尺寸<br>2、搭建文件结构<br><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/5555.jpg" style="zoom:80%;" /><br>3、设置视口标签以及引入初始化样式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, user-scalable&#x3D;no,         initial-scale&#x3D;1.0, maximum-scale&#x3D;1.0, minimum-scale&#x3D;1.0&quot;&gt;</span><br><span class="line">&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;css&#x2F;normalize.css&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>4、设置公共common.less文件</p>
+<ul>
+<li>新建common.less    设置好最常见的屏幕尺寸，利用媒体查询设置不同的html字体大小，因为除了首页其他页面也需要</li>
+<li>我们关心的尺寸有 320px、360px、375px、384px、400px、414px、424px、480px、540px、720px、750px</li>
+<li>划分的份数我们定为 15等份</li>
+<li>因为我们pc端也可以打开我们苏宁移动端首页，我们默认html字体大小为 50px，注意这句话写到最上面<h3 id="rem-适配方案2"><a href="#rem-适配方案2" class="headerlink" title="rem 适配方案2"></a>rem 适配方案2</h3>手机淘宝团队出的简洁高效 移动端适配库<br>我们再也不需要在写不同屏幕的媒体查询，因为里面js做了处理<br>它的原理是把当前设备划分为10等份，但是不同设备下，比例还是一致的。<br>我们要做的，就是确定好我们当前设备的html 文字大小就可以了<br>比如当前设计稿是 750px， 那么我们只需要把 html 文字大小设置为 75px(750px / 10) 就可以<br>里面页面元素rem值： 页面元素的px 值 /  75<br>剩余的，让flexible.js来去算<br>github地址：<a target="_blank" rel="noopener" href="https://link.jianshu.com/?t=https://github.com/amfe/lib-flexible">https://github.com/amfe/lib-flexible</a><br>总结：<br>因为flexible是默认将屏幕分为10等分<br>但是当屏幕大于750的时候希望不要再去重置html字体了<br>所以要自己通过媒体查询设置一下<br>并且要把权重提到最高<br>VSCode  px 转换rem 插件 cssrem<br>因为cssrem中css自动转化为rem是参照默认插件的16转换的所以需要自己配置<img src="https://gitee.com/chenyipeng9/blog/raw/master/img/6666.jpg" style="zoom:67%;" />
+<img src="https://gitee.com/chenyipeng9/blog/raw/master/img/7777.jpg" style="zoom:67%;" /></li>
+</ul>
+
+                                            
+                                                <!-- 添加版权声明 -->
+                                                
+                                                    
+                                                        <div class="declare">
+                                                            <strong>本文作者：</strong>
+                                                            
+                                                                kszy
+                                                                    
+                                                                            <br>
+                                                                            <strong>本文链接：</strong>
+                                                                            <a href="https://ChenYiPeng-9.github.io/2021/03/03/移动web开发_rem布局/" title="移动开发之rem布局" target="_blank">
+                                                                                https://ChenYiPeng-9.github.io/
+                                                                                    2021/03/03/移动web开发_rem布局/
+                                                                            </a>
+                                                                            <br>
+                                                                            <strong>版权声明：</strong> 本作品采用
+                                                                            <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                                                                                知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议
+                                                                            </a>
+                                                                            进行许可。转载请注明出处！
+                                                                            
+                                                        </div>
+                                                        
+                                                                <!-- 添加版权声明 -->
+
+                                                                
+        </div>
+        <div class="article-info article-info-index">
+            
+                    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -252,33 +356,170 @@
 		</ul>
 	</div>
 
-          
+                        
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/git//" class="article-tag-list-link color4">git</a>
+        			<a href="/categories/CSS//" class="article-tag-list-link color4">CSS</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+                            
+
+                                    
+                                        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
   </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://chenyipeng-9.github.io/2021/03/03/%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91_rem%E5%B8%83%E5%B1%80/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+                                            
+                                                <div class="clearfix"></div>
+        </div>
+        </div>
 </article>
-                                                                        
-                                                                            
-                                                            </div>
-                                                        </section>
+
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2021/03/02/%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91_flex%E5%B8%83%E5%B1%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">移动开发之flex布局</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+        
+            <aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91%E4%B9%8Brem%E5%B8%83%E5%B1%80"><span class="toc-number">1.</span> <span class="toc-text">移动web开发之rem布局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#rem%E5%9F%BA%E7%A1%80"><span class="toc-number">1.0.1.</span> <span class="toc-text">rem基础</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#rem%E5%8D%95%E4%BD%8D"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">rem单位</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.0.2.</span> <span class="toc-text">媒体查询</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">什么是媒体查询</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83"><span class="toc-number">1.0.2.2.</span> <span class="toc-text">媒体查询语法规范</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Less-%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.0.2.3.</span> <span class="toc-text">Less 介绍</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rem%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88"><span class="toc-number">1.0.3.</span> <span class="toc-text">rem适配方案</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#rem%E5%AE%9E%E9%99%85%E5%BC%80%E5%8F%91%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%881"><span class="toc-number">1.0.3.1.</span> <span class="toc-text">rem实际开发适配方案1</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8B%8F%E5%AE%81%E9%A6%96%E9%A1%B5"><span class="toc-number">1.0.4.</span> <span class="toc-text">苏宁首页</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rem-%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%882"><span class="toc-number">1.0.5.</span> <span class="toc-text">rem 适配方案2</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+                
+                    
+
+                                
+
+                                            
+
                                                         
 
-                                                            
+                                                                
+                                                                            
 
-                                                                    
+                                                                                
+                                                                                    
+                                                                                        <section id="comments" class="comments">
+                                                                                            <style>
+                                                                                                .comments {
+                                                                                                    margin: 30px;
+                                                                                                    padding: 10px;
+                                                                                                    background: #fff
+                                                                                                }
+                                                                                                
+                                                                                                @media screen and (max-width:800px) {
+                                                                                                    .comments {
+                                                                                                        margin: auto;
+                                                                                                        padding: 10px;
+                                                                                                        background: #fff
+                                                                                                    }
+                                                                                                }
+                                                                                            </style>
+                                                                                            <div id="vcomment" class="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    var notify = 'false' == true ? true : false;
+    var verify = 'false' == true ? true : false;
+    new Valine({
+        av: AV,
+        el: '#vcomment',
+        notify: notify,
+        app_id: "L0XwK15RgrQ0qPWIRUkgQMEE-gzGzoHsz",
+        app_key: "BsRfVNRfKdy1F9722HNNx6GH",
+        placeholder: "Just go go",
+        avatar: "mm",
+    });
+</script>
+                                                                                        </section>
+                                                                                        
+                                                                                            
                             </div>
                         </div>
                     </div>
@@ -311,10 +552,10 @@
     var yiliaConfig = {
         mathjax: false,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
-        isCategory: true,
+        isCategory: false,
         open_in_new: false,
         toc_hide_index: true,
         root: "/",
