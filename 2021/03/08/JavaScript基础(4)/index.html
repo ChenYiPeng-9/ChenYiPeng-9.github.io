@@ -6,20 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://ChenYiPeng-9.github.io">
-  <title>my first blog article | 小菜鸡的琐碎生活</title>
+  <title>JavaScript基础(四) | 小菜鸡的琐碎生活</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##第一章">
+  <meta name="description" content="2021&#x2F;3&#x2F;8  周一  晴">
 <meta property="og:type" content="article">
-<meta property="og:title" content="my first blog article">
-<meta property="og:url" content="https://chenyipeng-9.github.io/2021/02/01/1%20-%20%E5%89%AF%E6%9C%AC/index.html">
+<meta property="og:title" content="JavaScript基础(四)">
+<meta property="og:url" content="https://chenyipeng-9.github.io/2021/03/08/JavaScript%E5%9F%BA%E7%A1%80(4)/index.html">
 <meta property="og:site_name" content="小菜鸡的琐碎生活">
-<meta property="og:description" content="##第一章">
+<meta property="og:description" content="2021&#x2F;3&#x2F;8  周一  晴">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-02-01T11:01:22.000Z">
-<meta property="article:modified_time" content="2021-02-02T13:54:12.580Z">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/%E5%9B%BE%E7%89%871fff.png">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/%E5%9B%BE%E7%89%872ffff.png">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/%E5%9B%BE%E7%89%873fff.png">
+<meta property="article:published_time" content="2021-03-08T12:58:45.977Z">
+<meta property="article:modified_time" content="2021-03-08T12:58:33.247Z">
 <meta property="article:author" content="kszy">
-<meta property="article:tag" content="机器学习">
+<meta property="article:tag" content="前端">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/%E5%9B%BE%E7%89%871fff.png">
   
     <link rel="alternative" href="/atom.xml" title="小菜鸡的琐碎生活" type="application/atom+xml">
   
@@ -214,42 +218,168 @@
                                 <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
                             </div>
                             <div id="js-content" class="content-ll">
-                                <article id="post-1 - 副本" class="article article-type-post " itemscope itemprop="blogPost">
+                                <article id="post-JavaScript基础(4)" class="article article-type-post " itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
   
     <h1 class="article-title" itemprop="name">
-      my first blog article
+      JavaScript基础(四)
     </h1>
   
 
                     
-                        <a href="/2021/02/01/1%20-%20%E5%89%AF%E6%9C%AC/" class="archive-article-date">
-  	<time datetime="2021-02-01T11:01:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-01</time>
+                        <a href="/2021/03/08/JavaScript%E5%9F%BA%E7%A1%80(4)/" class="archive-article-date">
+  	<time datetime="2021-03-08T12:58:45.977Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-08</time>
 </a>
                             
             </header>
             
                 <div class="article-entry" itemprop="articleBody">
                     
-                                        <p>##第一章</p>
+                                        <p>2021/3/8  周一  晴 </p>
 <a id="more"></a>
+<h2 id="1-循环"><a href="#1-循环" class="headerlink" title="1 - 循环"></a>1 - 循环</h2><h3 id="1-1-for循环"><a href="#1-1-for循环" class="headerlink" title="1.1 for循环"></a>1.1 for循环</h3><ul>
+<li><p>语法结构</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(初始化变量; 条件表达式; 操作表达式 )&#123;</span><br><span class="line">      <span class="comment">//循环体</span></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>初始化变量</td>
+<td>通常被用于初始化一个计数器，该表达式可以使用 var 关键字声明新的变量，这个变量帮我们来记录次数。</td>
+</tr>
+<tr>
+<td>条件表达式</td>
+<td>用于确定每一次循环是否能被执行。如果结果是 true 就继续循环，否则退出循环。</td>
+</tr>
+<tr>
+<td>操作表达式</td>
+<td>用于确定每一次循环是否能被执行。如果结果是 true 就继续循环，否则退出循环。</td>
+</tr>
+<tr>
+<td>执行过程：</td>
+<td></td>
+</tr>
+</tbody></table>
+<ol>
+<li>初始化变量，初始化操作在整个 for 循环只会执行一次。</li>
+</ol>
+</li>
+<li><p>执行条件表达式，如果为true，则执行循环体语句，否则退出循环，循环结束。</p>
+</li>
+</ul>
+<ol>
+<li>执行操作表达式，此时第一轮结束。</li>
+<li>第二轮开始，直接去执行条件表达式（不再初始化变量），如果为 true ，则去执行循环体语句，否则退出循环。</li>
+<li>继续执行操作表达式，第二轮结束。</li>
+<li>后续跟第二轮一致，直至条件表达式为假，结束整个 for 循环。<br>断点调试：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">断点调试是指自己在程序的某一行设置一个断点，调试时，程序运行到这一行就会停住，然后你可以一步一步往下调试，调试过程中可以看各个变量当前的值，出错的话，调试到出错的代码行即显示错误，停下。断点调试可以帮助观察程序的运行过程</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">断点调试的流程：</span><br><span class="line">1、浏览器中按 F12--&gt; sources --&gt;找到需要调试的文件--&gt;在程序的某一行设置断点</span><br><span class="line">2、Watch: 监视，通过watch可以监视变量的值的变化，非常的常用。</span><br><span class="line">3、摁下F11，程序单步执行，让程序一行一行的执行，这个时候，观察watch中变量的值的变化。</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li><p>for 循环重复相同的代码<br>比如输出10句“媳妇我错了”</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//  基本写法</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">1</span>; i &lt;= <span class="number">10</span>; i++)&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;媳妇我错了~&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 用户输入次数</span></span><br><span class="line"><span class="keyword">var</span> num = prompt(<span class="string">&#x27;请输入次数:&#x27;</span>)；</span><br><span class="line"><span class="keyword">for</span> ( <span class="keyword">var</span> i = <span class="number">1</span> ; i &lt;= num; i++) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;媳妇我错了~&#x27;</span>);</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure></li>
+<li><p>for 循环重复不相同的代码<br>例如，求输出1到100岁：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//  基本写法</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt;= <span class="number">100</span>; i++) &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;这个人今年&#x27;</span> + i + <span class="string">&#x27;岁了&#x27;</span>);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>例如，求输出1到100岁，并提示出生、死亡</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// for 里面是可以添加其他语句的 </span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt;= <span class="number">100</span>; i++) &#123;</span><br><span class="line">   <span class="keyword">if</span> (i == <span class="number">1</span>) &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">&#x27;这个人今年1岁了， 它出生了&#x27;</span>);</span><br><span class="line">   &#125; <span class="keyword">else</span> <span class="keyword">if</span> (i == <span class="number">100</span>) &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">&#x27;这个人今年100岁了，它死了&#x27;</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">         <span class="built_in">console</span>.log(<span class="string">&#x27;这个人今年&#x27;</span> + i + <span class="string">&#x27;岁了&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>for循环因为有了计数器的存在，还可以重复的执行某些操作，比如做一些算术运算。</p>
+<h3 id="1-2-双重for循环"><a href="#1-2-双重for循环" class="headerlink" title="1.2 双重for循环"></a>1.2 双重for循环</h3></li>
+<li><p>双重 for 循环概述</p>
+<pre><code>        循环嵌套是指在一个循环语句中再定义一个循环语句的语法结构，例如在for循环语句中，可以再嵌套一个for 循环，这样的 for 循环语句我们称之为双重for循环。
+</code></pre>
+</li>
+<li><p>双重 for 循环语法</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (外循环的初始; 外循环的条件; 外循环的操作表达式) &#123;</span><br><span class="line">    <span class="keyword">for</span> (内循环的初始; 内循环的条件; 内循环的操作表达式) &#123;  </span><br><span class="line">       需执行的代码;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>内层循环可以看做外层循环的循环体语句</li>
+<li>内层循环执行的顺序也要遵循 for 循环的执行顺序 </li>
+<li>外层循环执行一次，内层循环要执行全部次数</li>
+</ul>
+</li>
+<li><p>打印五行五列星星</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> star = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">1</span>; j &lt;= <span class="number">3</span>; j++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt;= <span class="number">3</span>; i++) &#123;</span><br><span class="line">      star += <span class="string">&#x27;☆&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 每次满 5个星星 就 加一次换行</span></span><br><span class="line">    star += <span class="string">&#x27;\n&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(star);</span><br></pre></td></tr></table></figure>
+<p>核心逻辑：<br>1.内层循环负责一行打印五个星星<br>2.外层循环负责打印五行</p>
+</li>
+<li><p>for 循环小结</p>
+<ul>
+<li>for 循环可以重复执行某些相同代码</li>
+<li>for 循环可以重复执行些许不同的代码，因为我们有计数器</li>
+<li>for 循环可以重复执行某些操作，比如算术运算符加法操作</li>
+<li>随着需求增加，双重for循环可以做更多、更好看的效果</li>
+<li>双重 for 循环，外层循环一次，内层 for 循环全部执行</li>
+<li>for 循环是循环条件和数字直接相关的循环</li>
+</ul>
+<h3 id="1-3-while循环"><a href="#1-3-while循环" class="headerlink" title="1.3 while循环"></a>1.3 while循环</h3><p>while语句的语法结构如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (条件表达式) &#123;</span><br><span class="line">    <span class="comment">// 循环体代码 </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>执行思路：</p>
+</li>
+<li><p>1 先执行条件表达式，如果结果为 true，则执行循环体代码；如果为 false，则退出循环，执行后面代码</p>
+</li>
+<li><p>2 执行循环体代码</p>
+</li>
+<li><p>3 循环体代码执行完毕后，程序会继续判断执行条件表达式，如条件仍为true，则会继续执行循环体，直到循环条件为 false 时，整个循环过程才会结束<br>注意：</p>
+</li>
+<li><p>使用 while 循环时一定要注意，它必须要有退出条件，否则会成为死循环</p>
+</li>
+</ul>
+<h3 id="1-4-do-while循环"><a href="#1-4-do-while循环" class="headerlink" title="1.4 do-while循环"></a>1.4 do-while循环</h3><p>do… while 语句的语法结构如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">do</span> &#123;</span><br><span class="line">    <span class="comment">// 循环体代码 - 条件表达式为 true 时重复执行循环体代码</span></span><br><span class="line">&#125; <span class="keyword">while</span>(条件表达式);</span><br></pre></td></tr></table></figure>
+<p>执行思路</p>
+<ul>
+<li><p>1 先执行一次循环体代码 </p>
+</li>
+<li><p>2 再执行条件表达式，如果结果为 true，则继续执行循环体代码，如果为 false，则退出循环，继续执行后面代码<br>注意：先再执行循环体，再判断，do…while循环语句至少会执行一次循环体代码</p>
+<h3 id="1-5-continue、break"><a href="#1-5-continue、break" class="headerlink" title="1.5 continue、break"></a>1.5 continue、break</h3><p>continue 关键字用于立即跳出本次循环，继续下一次循环（本次循环体中 continue 之后的代码就会少执行一次）。<br>例如，吃5个包子，第3个有虫子，就扔掉第3个，继续吃第4个第5个包子，其代码实现如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt;= <span class="number">5</span>; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (i == <span class="number">3</span>) &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;这个包子有虫子，扔掉&#x27;</span>);</span><br><span class="line">        <span class="keyword">continue</span>; <span class="comment">// 跳出本次循环，跳出的是第3次循环 </span></span><br><span class="line">     &#125;</span><br><span class="line">     <span class="built_in">console</span>.log(<span class="string">&#x27;我正在吃第&#x27;</span> + i + <span class="string">&#x27;个包子呢&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>运行结果：</p>
+<img src="https://gitee.com/chenyipeng9/blog/raw/master/img/%E5%9B%BE%E7%89%871fff.png" style="zoom: 50%;" />
+break 关键字用于立即跳出整个循环（循环结束）。
+例如，吃5个包子，吃到第3个发现里面有半个虫子，其余的不吃了，其代码实现如下：
 
-<p>内容</p>
-<hr>
-<p>##第二章</p>
-<p>内容</p>
-<hr>
-<p>##参考文献</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt;= <span class="number">5</span>; i++) &#123;</span><br><span class="line">   <span class="keyword">if</span> (i == <span class="number">3</span>) &#123;</span><br><span class="line">       <span class="keyword">break</span>; <span class="comment">// 直接退出整个for 循环，跳到整个for下面的语句</span></span><br><span class="line">   &#125;</span><br><span class="line">   <span class="built_in">console</span>.log(<span class="string">&#x27;我正在吃第&#x27;</span> + i + <span class="string">&#x27;个包子呢&#x27;</span>);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<p>运行结果：</p>
+<img src="https://gitee.com/chenyipeng9/blog/raw/master/img/%E5%9B%BE%E7%89%872ffff.png" style="zoom:50%;" />
 
+</li>
+</ul>
+<h2 id="2-代码规范"><a href="#2-代码规范" class="headerlink" title="2 - 代码规范"></a>2 - 代码规范</h2><h3 id="2-1-标识符命名规范"><a href="#2-1-标识符命名规范" class="headerlink" title="2.1 标识符命名规范"></a>2.1 标识符命名规范</h3><ul>
+<li> 变量、函数的命名必须要有意义</li>
+<li> 变量的名称一般用名词  </li>
+<li>函数的名称一般用动词  <h3 id="2-2-操作符规范"><a href="#2-2-操作符规范" class="headerlink" title="2.2 操作符规范"></a>2.2 操作符规范</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 操作符的左右两侧各保留一个空格</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt;= <span class="number">5</span>; i++) &#123;</span><br><span class="line">   <span class="keyword">if</span> (i == <span class="number">3</span>) &#123;</span><br><span class="line">       <span class="keyword">break</span>; <span class="comment">// 直接退出整个 for 循环，跳到整个for循环下面的语句</span></span><br><span class="line">   &#125;</span><br><span class="line">   <span class="built_in">console</span>.log(<span class="string">&#x27;我正在吃第&#x27;</span> + i + <span class="string">&#x27;个包子呢&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-3-单行注释规范"><a href="#2-3-单行注释规范" class="headerlink" title="2.3 单行注释规范"></a>2.3 单行注释规范</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt;= <span class="number">5</span>; i++) &#123;</span><br><span class="line">   <span class="keyword">if</span> (i == <span class="number">3</span>) &#123;</span><br><span class="line">       <span class="keyword">break</span>; <span class="comment">// 单行注释前面注意有个空格</span></span><br><span class="line">   &#125;</span><br><span class="line">   <span class="built_in">console</span>.log(<span class="string">&#x27;我正在吃第&#x27;</span> + i + <span class="string">&#x27;个包子呢&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-4-其他规范"><a href="#2-4-其他规范" class="headerlink" title="2.4 其他规范"></a>2.4 其他规范</h3>  关键词、操作符之间后加空格</li>
+</ul>
+<img src="https://gitee.com/chenyipeng9/blog/raw/master/img/%E5%9B%BE%E7%89%873fff.png" style="zoom: 80%;" />
                                             
                                                 <!-- 添加版权声明 -->
                                                 
                                                     
-                                                            <div class="declare" hidden="hidden"></div>
+                                                        <div class="declare">
+                                                            <strong>本文作者：</strong>
                                                             
+                                                                kszy
+                                                                    
+                                                                            <br>
+                                                                            <strong>本文链接：</strong>
+                                                                            <a href="https://ChenYiPeng-9.github.io/2021/03/08/JavaScript基础(4)/" title="JavaScript基础(四)" target="_blank">
+                                                                                https://ChenYiPeng-9.github.io/
+                                                                                    2021/03/08/JavaScript基础(4)/
+                                                                            </a>
+                                                                            <br>
+                                                                            <strong>版权声明：</strong> 本作品采用
+                                                                            <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                                                                                知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议
+                                                                            </a>
+                                                                            进行许可。转载请注明出处！
+                                                                            
+                                                        </div>
+                                                        
                                                                 <!-- 添加版权声明 -->
 
                                                                 
@@ -262,13 +392,24 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">机器学习</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
         		</li>
       		
 		</ul>
 	</div>
 
                         
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/JS//" class="article-tag-list-link color3">JS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
                             
 
@@ -318,7 +459,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://chenyipeng-9.github.io/2021/02/01/1%20-%20%E5%89%AF%E6%9C%AC/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://chenyipeng-9.github.io/2021/03/08/JavaScript%E5%9F%BA%E7%A1%80(4)/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -332,18 +473,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2021/02/03/Git/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Git基础知识
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/02/01/1/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">my first blog article</div>
+    <a href="/2021/03/07/JavaScript%E5%9F%BA%E7%A1%80(3)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript基础(三)</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -370,7 +502,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%BE%AA%E7%8E%AF"><span class="toc-number">1.</span> <span class="toc-text">1 - 循环</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-for%E5%BE%AA%E7%8E%AF"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 for循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E5%8F%8C%E9%87%8Dfor%E5%BE%AA%E7%8E%AF"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 双重for循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-while%E5%BE%AA%E7%8E%AF"><span class="toc-number">1.3.</span> <span class="toc-text">1.3 while循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-do-while%E5%BE%AA%E7%8E%AF"><span class="toc-number">1.4.</span> <span class="toc-text">1.4 do-while循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-continue%E3%80%81break"><span class="toc-number">1.5.</span> <span class="toc-text">1.5 continue、break</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83"><span class="toc-number">2.</span> <span class="toc-text">2 - 代码规范</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E6%A0%87%E8%AF%86%E7%AC%A6%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 标识符命名规范</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E6%93%8D%E4%BD%9C%E7%AC%A6%E8%A7%84%E8%8C%83"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 操作符规范</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E5%8D%95%E8%A1%8C%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83"><span class="toc-number">2.3.</span> <span class="toc-text">2.3 单行注释规范</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-%E5%85%B6%E4%BB%96%E8%A7%84%E8%8C%83"><span class="toc-number">2.4.</span> <span class="toc-text">2.4 其他规范</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
