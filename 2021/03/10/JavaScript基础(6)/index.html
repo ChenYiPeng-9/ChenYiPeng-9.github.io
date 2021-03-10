@@ -6,23 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://ChenYiPeng-9.github.io">
-  <title>CSS初识 | 小菜鸡的琐碎生活</title>
+  <title>JavaScript基础(六) | 小菜鸡的琐碎生活</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="2021&#x2F;2&#x2F;10  周三  晴">
+  <meta name="description" content="2021&#x2F;3&#x2F;10  周三  晴">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS初识">
-<meta property="og:url" content="https://chenyipeng-9.github.io/2021/02/10/CSS%E5%88%9D%E8%AF%86/index.html">
+<meta property="og:title" content="JavaScript基础(六)">
+<meta property="og:url" content="https://chenyipeng-9.github.io/2021/03/10/JavaScript%E5%9F%BA%E7%A1%80(6)/index.html">
 <meta property="og:site_name" content="小菜鸡的琐碎生活">
-<meta property="og:description" content="2021&#x2F;2&#x2F;10  周三  晴">
+<meta property="og:description" content="2021&#x2F;3&#x2F;10  周三  晴">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/10css%E5%A4%96%E9%93%BE%E5%BC%8F.jpg">
-<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/gz.png">
-<meta property="article:published_time" content="2021-02-10T13:11:23.543Z">
-<meta property="article:modified_time" content="2021-02-10T13:19:47.633Z">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/%E5%9B%BE%E7%89%871(1)hfg.png">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/%E5%9B%BE%E7%89%872(1)sdgvbsd.png">
+<meta property="og:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/%E5%9B%BE%E7%89%873(1dfvsd).png">
+<meta property="article:published_time" content="2021-03-10T14:20:27.742Z">
+<meta property="article:modified_time" content="2021-03-10T14:21:47.346Z">
 <meta property="article:author" content="kszy">
 <meta property="article:tag" content="前端">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/10css%E5%A4%96%E9%93%BE%E5%BC%8F.jpg">
+<meta name="twitter:image" content="https://gitee.com/chenyipeng9/blog/raw/master/img/%E5%9B%BE%E7%89%871(1)hfg.png">
   
     <link rel="alternative" href="/atom.xml" title="小菜鸡的琐碎生活" type="application/atom+xml">
   
@@ -217,146 +218,185 @@
                                 <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
                             </div>
                             <div id="js-content" class="content-ll">
-                                <article id="post-CSS初识" class="article article-type-post " itemscope itemprop="blogPost">
+                                <article id="post-JavaScript基础(6)" class="article article-type-post " itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
   
     <h1 class="article-title" itemprop="name">
-      CSS初识
+      JavaScript基础(六)
     </h1>
   
 
                     
-                        <a href="/2021/02/10/CSS%E5%88%9D%E8%AF%86/" class="archive-article-date">
-  	<time datetime="2021-02-10T13:11:23.543Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-10</time>
+                        <a href="/2021/03/10/JavaScript%E5%9F%BA%E7%A1%80(6)/" class="archive-article-date">
+  	<time datetime="2021-03-10T14:20:27.742Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-10</time>
 </a>
                             
             </header>
             
                 <div class="article-entry" itemprop="articleBody">
                     
-                                        <p>2021/2/10  周三  晴</p>
+                                        <p>2021/3/10  周三  晴 </p>
 <a id="more"></a>
-
-<h1 id="1-HTML的局限性"><a href="#1-HTML的局限性" class="headerlink" title="1.HTML的局限性"></a>1.HTML的局限性</h1><ul>
-<li>HTML满足不了设计者的需求</li>
-<li>操作html属性不方便</li>
-<li>HTML里面添加样式带来的是无尽的臃肿和繁琐</li>
-</ul>
-<h1 id="2-CSS-网页的美容师"><a href="#2-CSS-网页的美容师" class="headerlink" title="2.CSS 网页的美容师"></a>2.CSS 网页的美容师</h1><ul>
-<li>让我们的网页更加丰富多彩，布局更加灵活自如。   </li>
-<li>CSS的最大贡献就是：  让 HTML 从样式中脱离，  实现了 HTML 专注去做 结构呈现，样式交给css </li>
-</ul>
-<blockquote>
-<p><strong>我们理想中的结果： 结构(html)与样式(css)相分离</strong>  </p>
-</blockquote>
-<h1 id="3-CSS初识"><a href="#3-CSS初识" class="headerlink" title="3.CSS初识"></a>3.CSS初识</h1><ul>
-<li><p>概念：CSS(Cascading Style Sheets)  ，通常称为CSS样式表或层叠样式表（级联样式表）</p>
-</li>
-<li><p>作用：</p>
+<h2 id="1-作用域"><a href="#1-作用域" class="headerlink" title="1 - 作用域"></a>1 - 作用域</h2><h3 id="1-1-作用域概述"><a href="#1-1-作用域概述" class="headerlink" title="1.1 作用域概述"></a>1.1 作用域概述</h3><p>​        通常来说，一段程序代码中所用到的名字并不总是有效和可用的，而限定这个名字的可用性的代码范围就是这个名字的作用域。作用域的使用提高了程序逻辑的局部性，增强了程序的可靠性，减少了名字冲突。<br>JavaScript（es6前）中的作用域有两种：</p>
 <ul>
-<li>主要用于<strong>设置</strong> HTML页面中的文本内容（字体、大小、对齐方式等）、图片的外形（宽高、边框样式、边距等）以及<strong>版面的布局和外观显示样式。</strong></li>
-<li>CSS以HTML为基础，提供了丰富的功能，如字体、颜色、背景的控制及整体排版等，而且还可以针对不同的浏览器设置不同的样式。</li>
+<li>全局作用域</li>
+<li>局部作用域（函数作用域）    </li>
+</ul>
+<h3 id="1-2-全局作用域"><a href="#1-2-全局作用域" class="headerlink" title="1.2 全局作用域"></a>1.2 全局作用域</h3><pre><code>    作用于所有代码执行的环境(整个script标签内部)或独立的js文件。
+</code></pre>
+<h3 id="1-3-局部作用域"><a href="#1-3-局部作用域" class="headerlink" title="1.3 局部作用域"></a>1.3 局部作用域</h3><pre><code>    作用于函数内的代码环境，就是局部作用域。 
+    因为跟函数有关系，所以也称为函数作用域。
+</code></pre>
+<h3 id="1-4-jS没有块级作用域"><a href="#1-4-jS没有块级作用域" class="headerlink" title="1.4 jS没有块级作用域"></a>1.4 jS没有块级作用域</h3><ul>
+<li>块作用域由 { } 包括。</li>
+<li>在其他编程语言中（如 java、c#等），在 if 语句、循环语句中创建的变量，仅仅只能在本 if 语句、本循环语句中使用，如下面的Java代码：<br>java有块级作用域：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="keyword">true</span>)&#123;</span><br><span class="line">  <span class="keyword">int</span> num = <span class="number">123</span>;</span><br><span class="line">  system.out.print(num);  <span class="comment">// 123</span></span><br><span class="line">&#125;</span><br><span class="line">system.out.print(num);    <span class="comment">// 报错</span></span><br></pre></td></tr></table></figure>
+​        以上java代码会报错，是因为代码中 { } 即一块作用域，其中声明的变量 num，在 “{ }” 之外不能使用；而与之类似的JavaScript代码，则不会报错。<br>js中没有块级作用域（在ES6之前）<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    <span class="keyword">var</span> num = <span class="number">123</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">123</span>); <span class="comment">//123</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="number">123</span>);   <span class="comment">//123</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-变量的作用域"><a href="#2-变量的作用域" class="headerlink" title="2 - 变量的作用域"></a>2 - 变量的作用域</h2>  在JavaScript中，根据作用域的不同，变量可以分为两种：</li>
+<li>全局变量</li>
+<li>局部变量</li>
+</ul>
+<p>2.1 全局变量<br>    在全局作用域下声明的变量叫做全局变量（在函数外部定义的变量）。</p>
+<ul>
+<li>全局变量在代码的任何位置都可以使用</li>
+<li>在全局作用域下 var 声明的变量 是全局变量</li>
+<li>特殊情况下，在函数内不使用 var 声明的变量也是全局变量（不建议使用）</li>
+</ul>
+<p>2.2 局部变量<br>    在局部作用域下声明的变量叫做局部变量（在函数内部定义的变量）</p>
+<ul>
+<li>局部变量只能在该函数内部使用</li>
+<li>在函数内部 var 声明的变量是局部变量</li>
+<li>函数的形参实际上就是局部变量</li>
+</ul>
+<p>2.3 全局变量和局部变量的区别</p>
+<ul>
+<li>全局变量：在任何一个地方都可以使用，只有在浏览器关闭时才会被销毁，因此比较占内存</li>
+<li>局部变量：只在函数内部使用，当其所在的代码块被执行时，会被初始化；当代码块运行结束后，就会被销毁，因此更节省内存空间</li>
+</ul>
+<h2 id="3-作用域链"><a href="#3-作用域链" class="headerlink" title="3 - 作用域链"></a>3 - 作用域链</h2><p>​        只要是代码都一个作用域中，写在函数内部的局部作用域，未写在任何函数内部即在全局作用域中；如果函数中还有函数，那么在这个作用域中就又可以诞生一个作用域；根据在**[内部函数可以访问外部函数变量]**的这种机制，用链式查找决定哪些数据能被内部函数访问，就称作作用域链。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">案例分析<span class="number">1</span>：</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> num = <span class="number">123</span>;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">f2</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log( num );</span><br><span class="line">    &#125;</span><br><span class="line">    f2();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> num = <span class="number">456</span>;</span><br><span class="line">f1();</span><br></pre></td></tr></table></figure>
+<img src="https://gitee.com/chenyipeng9/blog/raw/master/img/%E5%9B%BE%E7%89%871(1)hfg.png" style="zoom:80%;" />
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">作用域链：采取就近原则的方式来查找变量最终的值</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn1</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> a = <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">var</span> b = <span class="string">&#x27;22&#x27;</span>;</span><br><span class="line">    fn2();</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">fn2</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> a = <span class="number">3</span>;</span><br><span class="line">        fn3();</span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">fn3</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> a = <span class="number">4</span>;</span><br><span class="line">            <span class="built_in">console</span>.log(a); <span class="comment">//a的值 ?</span></span><br><span class="line">            <span class="built_in">console</span>.log(b); <span class="comment">//b的值 ?</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">fn1();</span><br></pre></td></tr></table></figure>
+<img src="https://gitee.com/chenyipeng9/blog/raw/master/img/%E5%9B%BE%E7%89%872(1)sdgvbsd.png" style="zoom: 67%;" />
+
+<h2 id="4-预解析"><a href="#4-预解析" class="headerlink" title="4 - 预解析"></a>4 - 预解析</h2><p>4.1 预解析的相关概念<br>JavaScript 代码是由浏览器中的 JavaScript 解析器来执行的。<br>JavaScript 解析器在运行 JavaScript 代码的时候分为两步：<br>​    预解析和代码执行。</p>
+<ul>
+<li>预解析：在当前作用域下, JS 代码执行之前，浏览器会默认把带有 var 和 function 声明的变量在内存中进行提前声明或者定义，预解析也叫做变量、函数提升。</li>
+<li>代码执行： 从上到下执行JS语句。<br>注意：<strong>预解析会把变量和函数的声明在代码执行之前执行完成。</strong></li>
+</ul>
+<p>4.2 变量预解析<br>​    变量的声明会被提升到当前作用域的最上面，变量的赋值不会提升。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(num);  <span class="comment">// 结果是多少？</span></span><br><span class="line"><span class="keyword">var</span> num = <span class="number">10</span>;      <span class="comment">// ？</span></span><br></pre></td></tr></table></figure>
+<p>结果：undefined<br>注意：<strong>变量提升只提升声明，不提升赋值</strong></p>
+<p>4.3 函数预解析<br>​     函数的声明会被提升到当前作用域的最上面，但是不会调用函数。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fn();</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;打印&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>结果：控制台打印字符串 — ”打印“<br>注意：函数声明代表函数整体，所以函数提升后，函数名代表整个函数，但是函数并没有被调用！    </p>
+<p>4.4 函数表达式声明函数问题<br>函数表达式创建函数，会执行变量提升</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fn();</span><br><span class="line"><span class="keyword">var</span>  fn = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;想不到吧&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>结果：报错提示 ”fn is not a function”<br>解释：该段代码执行之前，会做变量声明提升，fn在提升之后的值是undefined；而fn调用是在fn被赋值为函数体之前，此时fn的值是undefined，所以无法正确调用</p>
+<h2 id="5-对象"><a href="#5-对象" class="headerlink" title="5 - 对象"></a>5 - 对象</h2><h3 id="5-1-对象的相关概念"><a href="#5-1-对象的相关概念" class="headerlink" title="5.1 对象的相关概念"></a>5.1 对象的相关概念</h3><ul>
+<li>什么是对象？<pre><code>​        在 JavaScript 中，对象是一组无序的相关属性和方法的集合，所有的事物都是对象，例如字符串、数值、数组、函数等。
+      对象是由属性和方法组成的。
+</code></pre>
+<ul>
+<li>属性：事物的特征，在对象中用属性来表示（常用名词）</li>
+<li>方法：事物的行为，在对象中用方法来表示（常用动词）<img src="https://gitee.com/chenyipeng9/blog/raw/master/img/%E5%9B%BE%E7%89%873(1dfvsd).png" style="zoom:80%;" /></li>
+</ul>
+</li>
+<li>为什么需要对象？<pre><code>​        保存一个值时，可以使用变量，保存多个值（一组值）时，可以使用数组。
+      如果要保存一个人的完整信息呢？
+      例如，将“张三疯”的个人的信息保存在数组中的方式为：
+</code></pre>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var arr &#x3D; [‘张三疯’, ‘男&#39;, 128,154];</span><br></pre></td></tr></table></figure>
+​        上述例子中用数组保存数据的缺点是：数据只能通过索引值访问，开发者需要清晰的清除所有的数据的排行才能准确地获取数据，而当数据量庞大时，不可能做到记忆所有数据的索引值。<br>​        为了让更好地存储一组数据，对象应运而生：对象中为每项数据设置了属性名称，可以访问数据更语义化，数据结构清晰，表意明显，方便开发者使用。<br>使用对象记录上组数据为：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">    <span class="string">&quot;name&quot;</span>:<span class="string">&quot;张三疯&quot;</span>,</span><br><span class="line">    <span class="string">&quot;sex&quot;</span>:<span class="string">&quot;男&quot;</span>,</span><br><span class="line">    <span class="string">&quot;age&quot;</span>:<span class="number">128</span>,</span><br><span class="line">    <span class="string">&quot;height&quot;</span>:<span class="number">154</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+JS中的对象表达结构更清晰，更强大。</li>
+</ul>
+<h3 id="5-2-创建对象的三种方式"><a href="#5-2-创建对象的三种方式" class="headerlink" title="5.2 创建对象的三种方式"></a>5.2 创建对象的三种方式</h3><h4 id="利用字面量创建对象"><a href="#利用字面量创建对象" class="headerlink" title="利用字面量创建对象"></a>利用字面量创建对象</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">花括号 &#123; &#125; 里面包含了表达这个具体事物（对象）的属性和方法；&#123; &#125; 里面采取键值对的形式表示 </span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>键：相当于属性名</p>
+</li>
+<li><p>值：相当于属性值，可以是任意类型的值（数字类型、字符串类型、布尔类型，函数类型等）<br>代码如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> star = &#123;</span><br><span class="line">    name : <span class="string">&#x27;pink&#x27;</span>,</span><br><span class="line">    age : <span class="number">18</span>,</span><br><span class="line">    sex : <span class="string">&#x27;男&#x27;</span>,</span><br><span class="line">    sayHi : <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        alert(<span class="string">&#x27;大家好啊~&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>上述代码中 star即是创建的对象。</p>
+</li>
+<li><p>对象的使用</p>
+<ul>
+<li><p>对象的属性</p>
+<ul>
+<li>对象中存储<strong>具体数据</strong>的 “键值对”中的 “键”称为对象的属性，即对象中存储具体数据的项</li>
+</ul>
+</li>
+<li><p>对象的方法</p>
+<ul>
+<li>对象中存储<strong>函数</strong>的 “键值对”中的 “键”称为对象的方法，即对象中存储函数的项</li>
+</ul>
+</li>
+<li><p>访问对象的属性</p>
+<ul>
+<li>对象里面的属性调用 : 对象.属性名 ，这个小点 . 就理解为“ 的 ”  </li>
+<li>对象里面属性的另一种调用方式 : 对象[‘属性名’]，注意方括号里面的属性必须加引号<br>示例代码如下：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(star.name)     <span class="comment">// 调用名字属性</span></span><br><span class="line"><span class="built_in">console</span>.log(star[<span class="string">&#x27;name&#x27;</span>])  <span class="comment">// 调用名字属性</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>调用对象的方法</p>
+<ul>
+<li>对象里面的方法调用：对象.方法名() ，注意这个方法名字后面一定加括号<br>示例代码如下：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">star.sayHi(); <span class="comment">// 调用 sayHi 方法,注意一定要带后面的括号</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>变量、属性、函数、方法总结</p>
+<pre><code>​        属性是对象的一部分，而变量不是对象的一部分，变量是单独存储数据的容器
+</code></pre>
+<ul>
+<li>变量：单独声明赋值，单独存在</li>
+<li>属性：对象里面的变量称为属性，不需要声明<br>​    方法是对象的一部分，函数是单独封装操作的容器</li>
+<li>函数：单独存在的，通过“函数名()”的方式就可以调用</li>
+<li>方法：对象里面的函数称为方法，方法不需要声明，使用“对象.方法名()”的方式就可以调用<h4 id="利用-new-Object-创建对象"><a href="#利用-new-Object-创建对象" class="headerlink" title="利用 new Object 创建对象"></a>利用 new Object 创建对象</h4></li>
 </ul>
 </li>
 </ul>
-<h1 id="4-引入CSS样式表（书写位置）"><a href="#4-引入CSS样式表（书写位置）" class="headerlink" title="4. 引入CSS样式表（书写位置）"></a>4. 引入CSS样式表（书写位置）</h1><h2 id="4-1-行内式（内联样式）"><a href="#4-1-行内式（内联样式）" class="headerlink" title="4.1 行内式（内联样式）"></a>4.1 行内式（内联样式）</h2><ul>
-<li>概念：称行内样式、行间样式，是通过标签的style属性来设置元素的样式</li>
-<li>其基本语法格式如下：<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;标签名 style=&quot;属性1:属性值1; 属性2:属性值2; 属性3:属性值3;&quot;&gt; 内容 &lt;/标签名&gt;</span><br></pre></td></tr></table></figure>
-实际上任何HTML标签都拥有style属性，用来设置行内式。</li>
-<li>案例：<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=&quot;color: red; font-size: 12px;&quot;&gt;青春不常在，抓紧谈恋爱&lt;/div&gt;</span><br></pre></td></tr></table></figure></li>
-<li>注意：<ul>
-<li>style其实就是标签的属性</li>
-<li>样式属性和值中间是<code>:</code></li>
-<li>多组属性值之间用<code>;</code>隔开。</li>
-<li>只能控制当前的标签和以及嵌套在其中的字标签，造成代码冗余</li>
+</li>
+<li><p>创建空对象</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> andy = <span class="keyword">new</span> Obect();</span><br></pre></td></tr></table></figure>
+<p>通过内置构造函数Object创建对象，此时andy变量已经保存了创建出来的空对象</p>
+</li>
+<li><p>给空对象添加属性和方法</p>
+<ul>
+<li>通过对象操作属性和方法的方式，来为对象增加属性和方法<br>示例代码如下：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">andy.name = <span class="string">&#x27;pink&#x27;</span>;</span><br><span class="line">andy.age = <span class="number">18</span>;</span><br><span class="line">andy.sex = <span class="string">&#x27;男&#x27;</span>;</span><br><span class="line">andy.sayHi = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    alert(<span class="string">&#x27;大家好啊~&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+注意：</li>
+<li>Object() ：第一个字母大写   </li>
+<li>new Object() ：需要 new 关键字</li>
+<li>使用的格式：对象.属性 =  值;     <h4 id="利用构造函数创建对象"><a href="#利用构造函数创建对象" class="headerlink" title="利用构造函数创建对象"></a>利用构造函数创建对象</h4></li>
 </ul>
 </li>
-<li>缺点：没有实现样式和结构相分离</li>
-</ul>
-<h2 id="4-2-内部样式表（内嵌样式表）"><a href="#4-2-内部样式表（内嵌样式表）" class="headerlink" title="4.2 内部样式表（内嵌样式表）"></a>4.2 内部样式表（内嵌样式表）</h2><ul>
-<li>概念：称内嵌式，是将CSS代码集中写在HTML文档的head头部标签中，并且用style标签定义    </li>
-<li>其基本语法格式如下：<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/CSS&quot;</span>&gt;</span></span><br><span class="line">    选择器（选择的标签） &#123; </span><br><span class="line">      属性1: 属性值1;</span><br><span class="line">      属性2: 属性值2; </span><br><span class="line">      属性3: 属性值3;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-<li>注意：<ul>
-<li>style标签一般位于head标签中，当然理论上他可以放在HTML文档的任何地方。</li>
-<li>type=”text/css”  在html5中可以省略。</li>
-<li>只能控制当前的页面</li>
-</ul>
-</li>
-<li>缺点：没有彻底分离</li>
-</ul>
-<h2 id="4-3-外部样式表（外链式）"><a href="#4-3-外部样式表（外链式）" class="headerlink" title="4.3 外部样式表（外链式）"></a>4.3 外部样式表（外链式）</h2><ul>
-<li>概念：称链入式，是将所有的样式放在一个或多个以**.CSS**为扩展名的外部样式表文件中，通过link标签将外部样式表文件链接到HTML文档中    </li>
-<li>其基本语法格式如下：<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span> <span class="attr">href</span>=<span class="string">&quot;css文件路径&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-<li>注意：  <ul>
-<li>link 是个单标签</li>
-<li>link标签需要放在head头部标签中，并且指定link标签的三个属性</li>
-</ul>
-</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>属性</th>
-<th align="left">作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>rel</td>
-<td align="left">定义当前文档与被链接文档之间的关系，在这里需要指定为“stylesheet”，表示被链接的文档是一个样式表文件。</td>
-</tr>
-<tr>
-<td>type</td>
-<td align="left">定义所链接文档的类型，在这里需要指定为“text/CSS”，表示链接的外部文件为CSS样式表。我们都可以省略</td>
-</tr>
-<tr>
-<td>href</td>
-<td align="left">定义所链接外部样式表文件的URL，可以是相对路径，也可以是绝对路径。</td>
-</tr>
-</tbody></table>
-<p><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/10css%E5%A4%96%E9%93%BE%E5%BC%8F.jpg"></p>
-<h2 id="4-4-三种样式表总结（位置）"><a href="#4-4-三种样式表总结（位置）" class="headerlink" title="4.4 三种样式表总结（位置）"></a>4.4 三种样式表总结（位置）</h2><table>
-<thead>
-<tr>
-<th>样式表</th>
-<th>优点</th>
-<th>缺点</th>
-<th>使用情况</th>
-<th>控制范围</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>行内样式表</td>
-<td>书写方便，权重高</td>
-<td>没有实现样式和结构相分离</td>
-<td>较少</td>
-<td>控制一个标签（少）</td>
-</tr>
-<tr>
-<td>内部样式表</td>
-<td>部分结构和样式相分离</td>
-<td>没有彻底分离</td>
-<td>较多</td>
-<td>控制一个页面（中）</td>
-</tr>
-<tr>
-<td>外部样式表</td>
-<td>完全实现结构和样式相分离</td>
-<td>需要引入</td>
-<td>最多，强烈推荐</td>
-<td>控制整个站点（多）</td>
-</tr>
-</tbody></table>
-<h1 id="5-总结CSS样式规则"><a href="#5-总结CSS样式规则" class="headerlink" title="5. 总结CSS样式规则"></a>5. 总结CSS样式规则</h1><p>使用HTML时，需要遵从一定的规范。CSS亦如此，要想熟练地使用CSS对网页进行修饰，首先需要了解CSS样式规<br><img src="https://gitee.com/chenyipeng9/blog/raw/master/img/gz.png"><br><strong>总结：</strong></p>
-<ol>
-<li>选择器用于指定CSS样式作用的HTML标签，花括号内是对该对象设置的具体样式。</li>
-<li>属性和属性值以“键值对”的形式出现。</li>
-<li>属性是对指定的对象设置的样式属性，例如字体大小、文本颜色等。</li>
-<li>属性和属性值之间用英文“:”连接。</li>
-<li>多个“键值对”之间用英文“;”进行区分。</li>
+<li><p>构造函数</p>
+<ul>
+<li>构造函数：是一种特殊的函数，主要用来初始化对象，即为对象成员变量赋初始值，它总与 new 运算符一起使用。我们可以把对象中一些公共的属性和方法抽取出来，然后封装到这个函数里面。</li>
+<li>构造函数的封装格式：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> 构造函数名(<span class="params">形参<span class="number">1</span>,形参<span class="number">2</span>,形参<span class="number">3</span></span>) </span>&#123;</span><br><span class="line">     <span class="built_in">this</span>.属性名<span class="number">1</span> = 参数<span class="number">1</span>;</span><br><span class="line">     <span class="built_in">this</span>.属性名<span class="number">2</span> = 参数<span class="number">2</span>;</span><br><span class="line">     <span class="built_in">this</span>.属性名<span class="number">3</span> = 参数<span class="number">3</span>;</span><br><span class="line">     <span class="built_in">this</span>.方法名 = 函数体;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>构造函数的调用格式<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var obj &#x3D; new 构造函数名(实参1，实参2，实参3)</span><br></pre></td></tr></table></figure>
+以上代码中，obj即接收到构造函数创建出来的对象。</li>
+<li>注意事项<ol>
+<li>  构造函数约定<strong>首字母大写</strong>。</li>
+<li>  函数内的属性和方法前面需要添加 <strong>this</strong> ，表示当前对象的属性和方法。</li>
+<li>  构造函数中<strong>不需要 return 返回结果</strong>。</li>
+<li>  当我们创建对象的时候，<strong>必须用 new 来调用构造函数</strong>。</li>
 </ol>
+</li>
+<li>其他<br> 构造函数，如 Stars()，抽象了对象的公共部分，封装到了函数里面，它泛指某一大类（class）<br> 创建对象，如 new Stars()，特指某一个，通过 new 关键字创建对象的过程我们也称为对象实例化</li>
+</ul>
+</li>
+<li><p>new关键字的作用</p>
+<ol>
+<li>在构造函数代码开始执行之前，创建一个空对象；</li>
+<li>修改this的指向，把this指向创建出来的空对象；</li>
+<li>执行函数的代码</li>
+<li>在函数完成之后，返回this—即创建出来的对象</li>
+</ol>
+<h3 id="5-3-遍历对象"><a href="#5-3-遍历对象" class="headerlink" title="5.3 遍历对象"></a>5.3 遍历对象</h3><p>​        for…in 语句用于对数组或者对象的属性进行循环操作。<br>​        其语法如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (变量 <span class="keyword">in</span> 对象名字) &#123;</span><br><span class="line">    <span class="comment">// 在此执行代码</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>​        语法中的变量是自定义的，它需要符合命名规范，通常我们会将这个变量写为 k 或者 key。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> k <span class="keyword">in</span> obj) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(k);      <span class="comment">// 这里的 k 是属性名</span></span><br><span class="line">    <span class="built_in">console</span>.log(obj[k]); <span class="comment">// 这里的 obj[k] 是属性值</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
 
                                             
                                                 <!-- 添加版权声明 -->
@@ -369,9 +409,9 @@
                                                                     
                                                                             <br>
                                                                             <strong>本文链接：</strong>
-                                                                            <a href="https://ChenYiPeng-9.github.io/2021/02/10/CSS初识/" title="CSS初识" target="_blank">
+                                                                            <a href="https://ChenYiPeng-9.github.io/2021/03/10/JavaScript基础(6)/" title="JavaScript基础(六)" target="_blank">
                                                                                 https://ChenYiPeng-9.github.io/
-                                                                                    2021/02/10/CSS初识/
+                                                                                    2021/03/10/JavaScript基础(6)/
                                                                             </a>
                                                                             <br>
                                                                             <strong>版权声明：</strong> 本作品采用
@@ -406,7 +446,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/CSS//" class="article-tag-list-link color4">CSS</a>
+        			<a href="/categories/JS//" class="article-tag-list-link color3">JS</a>
         		</li>
       		
 		</ul>
@@ -461,7 +501,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://chenyipeng-9.github.io/2021/02/10/CSS%E5%88%9D%E8%AF%86/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://chenyipeng-9.github.io/2021/03/10/JavaScript%E5%9F%BA%E7%A1%80(6)/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -475,18 +515,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2021/02/12/CSS%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          CSS基础选择器
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/02/09/%E5%88%97%E8%A1%A8%E5%92%8C%E8%A1%A8%E5%8D%95/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">列表与表单</div>
+    <a href="/2021/03/09/JavaScript%E5%9F%BA%E7%A1%80(5)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript基础(五)</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -513,7 +544,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-HTML%E7%9A%84%E5%B1%80%E9%99%90%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text">1.HTML的局限性</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-CSS-%E7%BD%91%E9%A1%B5%E7%9A%84%E7%BE%8E%E5%AE%B9%E5%B8%88"><span class="toc-number">2.</span> <span class="toc-text">2.CSS 网页的美容师</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-CSS%E5%88%9D%E8%AF%86"><span class="toc-number">3.</span> <span class="toc-text">3.CSS初识</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-%E5%BC%95%E5%85%A5CSS%E6%A0%B7%E5%BC%8F%E8%A1%A8%EF%BC%88%E4%B9%A6%E5%86%99%E4%BD%8D%E7%BD%AE%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">4. 引入CSS样式表（书写位置）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-%E8%A1%8C%E5%86%85%E5%BC%8F%EF%BC%88%E5%86%85%E8%81%94%E6%A0%B7%E5%BC%8F%EF%BC%89"><span class="toc-number">4.1.</span> <span class="toc-text">4.1 行内式（内联样式）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-%E5%86%85%E9%83%A8%E6%A0%B7%E5%BC%8F%E8%A1%A8%EF%BC%88%E5%86%85%E5%B5%8C%E6%A0%B7%E5%BC%8F%E8%A1%A8%EF%BC%89"><span class="toc-number">4.2.</span> <span class="toc-text">4.2 内部样式表（内嵌样式表）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-3-%E5%A4%96%E9%83%A8%E6%A0%B7%E5%BC%8F%E8%A1%A8%EF%BC%88%E5%A4%96%E9%93%BE%E5%BC%8F%EF%BC%89"><span class="toc-number">4.3.</span> <span class="toc-text">4.3 外部样式表（外链式）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-4-%E4%B8%89%E7%A7%8D%E6%A0%B7%E5%BC%8F%E8%A1%A8%E6%80%BB%E7%BB%93%EF%BC%88%E4%BD%8D%E7%BD%AE%EF%BC%89"><span class="toc-number">4.4.</span> <span class="toc-text">4.4 三种样式表总结（位置）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-%E6%80%BB%E7%BB%93CSS%E6%A0%B7%E5%BC%8F%E8%A7%84%E5%88%99"><span class="toc-number">5.</span> <span class="toc-text">5. 总结CSS样式规则</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">1.</span> <span class="toc-text">1 - 作用域</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%A6%82%E8%BF%B0"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 作用域概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E5%85%A8%E5%B1%80%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 全局作用域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E5%B1%80%E9%83%A8%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">1.3.</span> <span class="toc-text">1.3 局部作用域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-jS%E6%B2%A1%E6%9C%89%E5%9D%97%E7%BA%A7%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">1.4.</span> <span class="toc-text">1.4 jS没有块级作用域</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">2.</span> <span class="toc-text">2 - 变量的作用域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE"><span class="toc-number">3.</span> <span class="toc-text">3 - 作用域链</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%84%E8%A7%A3%E6%9E%90"><span class="toc-number">4.</span> <span class="toc-text">4 - 预解析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E5%AF%B9%E8%B1%A1"><span class="toc-number">5.</span> <span class="toc-text">5 - 对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5"><span class="toc-number">5.1.</span> <span class="toc-text">5.1 对象的相关概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F"><span class="toc-number">5.2.</span> <span class="toc-text">5.2 创建对象的三种方式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A9%E7%94%A8%E5%AD%97%E9%9D%A2%E9%87%8F%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1"><span class="toc-number">5.2.1.</span> <span class="toc-text">利用字面量创建对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A9%E7%94%A8-new-Object-%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1"><span class="toc-number">5.2.2.</span> <span class="toc-text">利用 new Object 创建对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A9%E7%94%A8%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1"><span class="toc-number">5.2.3.</span> <span class="toc-text">利用构造函数创建对象</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-%E9%81%8D%E5%8E%86%E5%AF%B9%E8%B1%A1"><span class="toc-number">5.3.</span> <span class="toc-text">5.3 遍历对象</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
